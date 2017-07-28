@@ -1,0 +1,15 @@
+include:
+  - system.locale
+  - system.repos
+  - system.pkgs
+  - network.dhcp
+  - network.dns
+  - network.ntp
+  - openssh
+  - openssh.auth
+  - openssh.config
+  - salt-minion
+  - system.coredump
+  - system.timezone
+  - users
+  - users.user_files

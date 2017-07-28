@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if su - "$PAM_USER" -c "klist -s && tokens | grep 'afs@cri.epita.net'" > /dev/null
+then
+  exit 0
+fi
+
+exit 1

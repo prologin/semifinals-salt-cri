@@ -1,0 +1,39 @@
+#!/bin/sh
+
+if [ "$PAM_TYPE" = "auth" ]; then
+  login=$(echo "$PAM_USER" | sed 's/\./_/g')
+  if [ $(id -u) -eq 0 ]; then
+    su - "$PAM_USER" -c "kinit $login" <&0 || exit 1
+  else
+    kinit $login <&0 || exit 1
+  fi
+fi
+
+if [ "$PAM_TYPE" = "open_session" ]; then
+  l1=$(expr substr $PAM_USER 1 1)
+  l2=$(expr substr $PAM_USER 1 2)
+  afs_u="/afs/cri.epita.net/user/$l1/$l2/$PAM_USER/u"
+
+  if [ $(id -u) -eq 0 ]; then
+    su - "$PAM_USER" -c aklog
+    su - "$PAM_USER" -c "[ -e \$HOME/afs ] || ln -s $afs_u \$HOME/afs"
+    su - "$PAM_USER" -c "[ -x \$HOME/afs/.confs/install.sh ] && AFS_DIR=\$HOME/afs \$HOME/afs/.confs/install.sh"
+  else
+    aklog
+    [ -e $HOME/afs ] || ln -s $afs_u $HOME/afs
+    [ -x $HOME/afs/.confs/install.sh ] && AFS_DIR=$HOME/afs $HOME/afs/.confs/install.sh
+  fi
+fi
+
+if [ "$PAM_TYPE" = "close_session" ]; then
+  if [ $(id -u) -eq 0 ]; then
+    su - "$PAM_USER" -c unlog
+    su - "$PAM_USER" -c kdestroy
+  else
+    unlog
+    kdestroy
+  fi
+  pkill -9 -u "$PAM_USER"
+fi
+
+exit 0

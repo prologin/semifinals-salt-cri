@@ -1,0 +1,4 @@
+include:
+  - .kerberos
+  - .ldap
+  - .sssd

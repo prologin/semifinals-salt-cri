@@ -1,0 +1,7 @@
+*.scrollBar     : false
+*metaSendsEscape: true
+*sessionMgt     : false
+*utf8           : always
+! colors
+*.foreground    : white
+*.background    : black

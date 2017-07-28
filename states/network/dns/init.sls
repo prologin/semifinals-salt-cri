@@ -1,0 +1,3 @@
+include:
+  - .hostsfile
+  - .resolved

@@ -1,0 +1,1 @@
+AFSD_ARGS="-fakestat -fakestat-all -memcache -afsdb"
