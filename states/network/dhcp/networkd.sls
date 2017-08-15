@@ -11,5 +11,9 @@ network-dhcp-configure-networkd:
         Name=*
         [Network]
         DHCP=ipv4
+        {% if salt['pillar.get']('networkd-domains') %}
+        Domains={{ salt['pillar.get']('networkd-domains') }}
+        UseDomains=true
+        {% endif %}
     - watch_in:
       - service: network-dhcp-enable-networkd
