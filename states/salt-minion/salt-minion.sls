@@ -12,11 +12,20 @@ salt-minion-configure-startup_states:
     - watch_in:
       - service: salt-minion-enable
 
-salt-minion-configure-environment:
+salt-minion-configure-states-environment:
   file.replace:
     - name: /etc/salt/minion
     - pattern: "^environment:.*$"
     - repl: "environment: {{ opts['environment'] }}"
+    - append_if_not_found: True
+    - watch_in:
+      - service: salt-minion-enable
+
+salt-minion-configure-pillar-environment:
+  file.replace:
+    - name: /etc/salt/minion
+    - pattern: "^pillarenv:.*$"
+    - repl: "pillarenv: {{ opts['pillarenv'] }}"
     - append_if_not_found: True
     - watch_in:
       - service: salt-minion-enable
