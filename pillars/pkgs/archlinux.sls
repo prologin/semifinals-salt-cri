@@ -4,4 +4,3 @@ pkgs:
   - mono
   - mono-debugger
   - mono-tools
-  - glu

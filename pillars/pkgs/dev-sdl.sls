@@ -10,4 +10,4 @@ pkgs:
   - sdl2_image
   - sdl2_net
   - sdl2_ttf
-
+  - glu
