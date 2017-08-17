@@ -13,4 +13,3 @@ pkgs:
   - unzip
   - wget
   - zip
-  - zsh

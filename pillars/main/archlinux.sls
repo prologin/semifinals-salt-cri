@@ -10,7 +10,7 @@ users:
 
   root:
     password: $1$2GW70FgP$9Hwg2xHXa0wYKRBtpufFZ.
-    shell: /bin/zsh
+    shell: /bin/bash
     user_files:
       enabled: True
       source: salt://files/pxe/home/root
