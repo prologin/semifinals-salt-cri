@@ -33,10 +33,8 @@ pkgs:
   - i3lock-epita
   - mlocate
   - openbsd-netcat
-  - pandoc
   - redshift
   - rxvt-unicode
-  - texlive-core
   - xorg-xeyes
   - zenity
 

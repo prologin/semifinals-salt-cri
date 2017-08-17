@@ -1,0 +1,3 @@
+pkgs:
+  - texlive-core
+  - pandoc
