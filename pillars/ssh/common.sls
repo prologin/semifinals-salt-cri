@@ -17,6 +17,12 @@ openssh:
         present: True
         enc: ssh-rsa
         name: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDjP773kL8olTsi6RZFgWLTRTb1fwGzc4mD7jSnAAI1DKDamaL/+UUoWBGi8MEzpz9p5BNCPt0WxnFHoF4wq3EQsl7FgnEKcXkCBBbabUNQ5lGdK3cAZz26QpceqcAbToNU3S/GiVjwEcROlF/Q9ZI9swHuG0lfQ3+qqarFzCIEJC+1kRvrRDQZJImcuf2uhGkMwDSagg6S7ySMfMilBIqZqAWrB5UVEQQMAL23209h159Iyu+eZjKkjcUghyRnJkgFvWQAvlx6aXk+al5awMfXMSY7lSOI57L2SV+xN5CkiSytEuSpTKfVjrt3IrlkE2acyTQg/h2bEvxmvUlAkJwMsFJnHBKnNWQB39zV58Xy5yessmaMCYzPcGIWGZvk/SGEvi7l3kn36Tnj71+fkru5YeSdmZQmHFvWsfMM1N17u4aY8g4kect8hMPW014dJpi/AljH9F73rV8c6yrbCKVZkwxguV+j6JhkW6bA3cQXMSlhIDuK161DJ8cPtd7ZLW7FEO1iGjSuVrTPyzJx2WaSrNISS07BIItis1FVDSAJ74FtbYnWcGmBnZmjYHbwDjAG+uXFGhaWxrGkLxtR0h3U8SmMuoudZzh7ThVy55GkBOH1YzP+XHC2AIOq3ubvmhH2/aazdWnSQVc0ydVQs1VVD0AgXweGjUS6uzjmrp7Jgw== bardou_a@epita.fr"
+
+    jordan_lab_key:
+      - user: root
+        present: True
+        enc: ssh-rsa
+        name: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC17pnCLEvu1QCkOfl+0wsFvY/IlNtV78cYmS2Ei2R6Py1aRT1rRzdR6eBaLVL0zayhH9Nu5CWzsd/u+ag3m+S+MHHF0sBoXJZKo/gV/L4hc8mEbS7QLD1IoMX7wHGB1g5nVPXLAwenwH8wGavfD+N4yj4MtG+5ThBXi72CEQ722/BpEOU+u4BilxFtN72bc6dZHrx/ekDDD638fcTykzPMPXUAIqq4NrFTYSU+NwRyrkSAQld4u9cJc9FWgPO1kqYOpVMfYh9YqkajTaKRLcYDceGWJ8xz7dJ1bRhGLNJb7np4pKBxnMl2LVjzUGnx2Ns1dIhbFo0FK6KYqQp7o0oBhyHNNESkkzhUuB2zYNDTWy7yBjmfYWhG2Ckk4zllL4+r129KSg6B4xxbkKCExVqv9pWRKCbklHLHiGw9mvMoZbRNDvWU5cARURo4rxrHN67bubTa/L0Y3O8JTLtyVCE4y8Hk4yIpyemu7z3hbBy0KTWKsSc2cJq6f4hrNr1Qp1O6aUA3NQheabIRXaKlSt38uVUGBj/79VXXcHON8gd1yUpqP/iGN064DMh5RaOWyNPBaHm2WrQKfvim2TH8RZgVn++6qCwwgo8jMXLAl2SLear3fUvrSbs7JfhT7yiF1V/8plY/bvJuDd0OkJBjrgm+43/hVmI6EiFIghMsQMcREw== jordan@jordan"
   provide_ecdsa_keys: True
   provide_rsa_keys: True
   ecdsa:
