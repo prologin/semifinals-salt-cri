@@ -10,7 +10,7 @@ users:
       - video
 
   root:
-    password: $1$rnTP9BKf$YHx22OmmRp1fuHKfiHI4l.
+    password: $1$f3rZ51yv$O1WONwSt4zoKS8IiAeXvy/
     shell: /bin/bash
     user_files:
       enabled: True
