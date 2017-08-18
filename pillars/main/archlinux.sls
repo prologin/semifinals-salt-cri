@@ -13,7 +13,7 @@ users:
     shell: /bin/bash
     user_files:
       enabled: True
-      source: salt://files/pxe/home/root
+      source: salt://files/default/home/root
 
 salt-minion-prefix: archlinux
 

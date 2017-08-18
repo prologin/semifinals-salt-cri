@@ -8,16 +8,13 @@ users:
     groups:
       - audio
       - video
-    user_files:
-      enabled: True
-      source: salt://files/sup-pxe/home/epita
 
   root:
     password: $1$rnTP9BKf$YHx22OmmRp1fuHKfiHI4l.
     shell: /bin/bash
     user_files:
       enabled: True
-      source: salt://files/sup-pxe/home/root
+      source: salt://files/default/home/root
 
 salt-minion-prefix: sup-archlinux
 
