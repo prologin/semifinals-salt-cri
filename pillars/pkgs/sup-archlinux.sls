@@ -3,5 +3,5 @@ pkgs:
   - mono
   - mono-debugger
   - mono-tools
-  - monodevelop
+  - rider
   - glu
