@@ -17,6 +17,7 @@ base:
     - meta.pie
     - meta.xorg
     - display.wm.xfce
+    - dev.tuareg
 
   'browser-archlinux-*':
     - meta.xorg
