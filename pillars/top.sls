@@ -10,6 +10,7 @@ base:
     - pkgs.dev
     - pkgs.dev-sdl
     - pkgs.archlinux
+    - pkgs.vcsn
 
   'sup-archlinux-*':
     - main.sup-archlinux
