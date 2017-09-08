@@ -15,7 +15,7 @@ users:
       enabled: True
       source: salt://files/default/home/root
 
-salt-minion-prefix: archlinux
+salt-minion-prefix: pie-archlinux
 
 sddm-title: "--- Arch Linux ---"
 sddm-footer: "build: {{ "now"|strftime("%y%m%d-%H%m") }}"
