@@ -27,3 +27,6 @@ base:
     - meta.pie
     - meta.xorg
     - display.wm.xfce
+
+  'dump-*':
+    - auth.exec

@@ -32,3 +32,7 @@ base:
     - pkgs.dev
     - pkgs.dev-python
     - pkgs.coding
+
+  'dump-*':
+    - main.dump
+    - pkgs.dump

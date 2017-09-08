@@ -1,0 +1,3 @@
+pkgs:
+  - nfs-utils
+  - clonezilla
