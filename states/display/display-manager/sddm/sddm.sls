@@ -16,6 +16,6 @@ display-display-manager-sddm-configue:
     - name: /usr/share/sddm/scripts/Xsetup
     - contents: |
         #!/bin/sh
-        setxkbmap us,fr
+        setxkbmap us,gb,fr
     - require:
       - pkg: display-display-manager-sddm-install
