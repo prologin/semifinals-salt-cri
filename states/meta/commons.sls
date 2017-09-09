@@ -13,3 +13,4 @@ include:
   - system.timezone
   - users
   - users.user_files
+  - system.users.empty_password_workaround
