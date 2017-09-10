@@ -17,7 +17,7 @@ users:
     shell: /bin/zsh
     user_files:
       enabled: True
-      source: salt://files/pxe/home/root
+      source: salt://files/default/home/root
 
 salt-minion-prefix: browser-archlinux
 
