@@ -20,7 +20,7 @@ base:
     - dev.tuareg
 
   'browser-archlinux-*':
-    - meta.xorg
+    - meta.xorg-nodm
     - auth.autologin
 
   'coding-archlinux-*':
