@@ -11,4 +11,5 @@ done
 id="{{ pillar.get('salt-minion-prefix') }}-${ip}"
 sed -i '/^id:/d' /etc/salt/minion
 echo "id: $id" >> /etc/salt/minion
+echo "$id" > /etc/salt/minion_id
 exec salt-minion
