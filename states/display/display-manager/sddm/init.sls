@@ -1,2 +1,3 @@
 include:
   - .sddm
+  - .fix-pam
