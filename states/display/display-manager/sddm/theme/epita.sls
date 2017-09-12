@@ -16,8 +16,6 @@ display-display-manager-sddm-theme-epita-configure:
     - source: salt://display/display-manager/sddm/files/theme.conf.user
     - require:
       - pkg: display-display-manager-sddm-theme-epita-install
-    - watch_in:
-      - service: display-display-manager-sddm-enable
 
 display-display-manager-sddm-configure-theme:
   file.managed:
@@ -27,5 +25,3 @@ display-display-manager-sddm-configure-theme:
         Numlock=on
         [Theme]
         Current=epita-simplyblack
-    - watch_in:
-      - service: display-display-manager-sddm-enable
