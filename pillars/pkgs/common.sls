@@ -5,6 +5,7 @@ pkgs:
   - python
   - python-pip
   - python-virtualenv
+  - rsync
   - screen
   - sudo
   - tcpdump
