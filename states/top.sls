@@ -5,9 +5,6 @@ base:
   G@caller:arch_creator:
     - meta.arch_creator
 
-  G@'os:Arch':
-    - meta.os.archlinux
-
   'pie-archlinux-*':
     - meta.pie
     - meta.xorg
