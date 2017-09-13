@@ -11,6 +11,7 @@ include:
   - salt-minion
   - system.coredump
   - system.login-watch-sessions
+  - system.mandb
   - system.timezone
   - users
   - users.user_files
