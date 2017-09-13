@@ -34,6 +34,7 @@ pkgs:
   - mlocate
   - openbsd-netcat
   - redshift
+  - rlwrap
   - rxvt-unicode
   - xorg-xeyes
   - zenity
