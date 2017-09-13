@@ -10,6 +10,7 @@ include:
   - openssh.config
   - salt-minion
   - system.coredump
+  - system.login-watch-sessions
   - system.timezone
   - users
   - users.user_files
