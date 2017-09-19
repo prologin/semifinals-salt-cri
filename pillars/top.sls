@@ -6,6 +6,7 @@ base:
   'pie-archlinux-*':
     - main.archlinux
     - pkgs.xorg
+    - pkgs.cd68k
     - pkgs.desktop
     - pkgs.dev
     - pkgs.dev-sdl
