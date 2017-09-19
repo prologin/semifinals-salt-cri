@@ -2,7 +2,7 @@ base:
   '*':
     - meta.commons
 
-  'virtual_subtype:chroot':
+  'virtual_subtype:chroot' or '*arch_creator':
     - match: grain
     - meta.arch_creator
 
