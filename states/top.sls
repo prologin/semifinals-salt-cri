@@ -2,8 +2,8 @@ base:
   '*':
     - meta.commons
 
-  'virtual_subtype:chroot' or '*arch_creator':
-    - match: grain
+  'G@virtual_subtype:chroot or *arch_creator':
+    - match: compound
     - meta.arch_creator
 
   'pie-archlinux-*':
