@@ -23,6 +23,7 @@ pkgs:
   - strace
   - tk
   - valgrind
+  - check
 
   # vcs
   - subversion
