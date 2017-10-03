@@ -30,6 +30,7 @@ base:
     - meta.pie
     - meta.xorg
     - display.wm.xfce
+    - display.xorg.intel-device
 
   'dump-*':
     - auth.exec
