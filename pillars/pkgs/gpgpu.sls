@@ -5,5 +5,6 @@ pkgs:
   - opencl-headers
 
   # CUDA and OpenCL (despite the names)
+  - nvidia-dkms
   - opencl-nvidia
   - cuda
