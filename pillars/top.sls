@@ -10,6 +10,7 @@ base:
     - pkgs.cd68k
     - pkgs.desktop
     - pkgs.dev
+    - pkgs.dev-iso
     - pkgs.dev-sdl
     - pkgs.archlinux
     - pkgs.vcsn
