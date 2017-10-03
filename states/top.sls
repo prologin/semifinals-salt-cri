@@ -26,5 +26,10 @@ base:
     - meta.xorg
     - display.wm.xfce
 
+  'cuda-archlinux-*':
+    - meta.pie
+    - meta.xorg
+    - display.wm.xfce
+
   'dump-*':
     - auth.exec
