@@ -34,3 +34,9 @@ base:
 
   'dump-*':
     - auth.exec
+
+  'fioi-archlinux-*':
+    - meta.pie
+    - meta.xorg
+    - display.wm.xfce
+    - dev.tuareg

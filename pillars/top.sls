@@ -50,3 +50,14 @@ base:
   'dump-*':
     - main.dump
     - pkgs.dump
+
+  'fioi-archlinux-*':
+    - main.fioi
+    - pkgs.misc
+    - pkgs.xorg
+    - pkgs.desktop
+    - pkgs.dev
+    - pkgs.dev-sdl
+    - pkgs.archlinux
+    - pkgs.ocaml
+    - pkgs.fioi

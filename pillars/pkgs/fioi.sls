@@ -1,0 +1,14 @@
+pkgs:
+  - gedit
+  - eclipse-java
+  - geany
+  - kate
+  - codeblocks
+  - ddd
+  - fpc
+  - tk
+  - jdk8-openjdk
+  - openjdk8-doc
+  - python-docs
+  - nano
+  - qtcreator
