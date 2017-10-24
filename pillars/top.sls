@@ -4,7 +4,8 @@ base:
     - pkgs.common
 
   'pie-archlinux-*':
-    - main.archlinux
+    - main.pie-archlinux
+    - pkgs.pie-archlinux
     - pkgs.misc
     - pkgs.xorg
     - pkgs.cd68k
@@ -12,39 +13,38 @@ base:
     - pkgs.dev
     - pkgs.dev-iso
     - pkgs.dev-sdl
-    - pkgs.archlinux
     - pkgs.vcsn
 
   'sup-archlinux-*':
     - main.sup-archlinux
+    - pkgs.sup-archlinux
     - pkgs.xorg
     - pkgs.desktop
     - pkgs.dev
-    - pkgs.sup-archlinux
     - pkgs.ocaml
 
   'browser-archlinux-*':
     - main.browser-archlinux
-    - pkgs.xorg
     - pkgs.browser-archlinux
+    - pkgs.xorg
 
   'coding-archlinux-*':
     - main.coding
+    - pkgs.coding
     - pkgs.xorg
     - pkgs.desktop
     - pkgs.dev
     - pkgs.dev-python
-    - pkgs.coding
 
   'cuda-archlinux-*':
     - main.cuda-archlinux
+    - pkgs.pie-archlinux
     - pkgs.misc
     - pkgs.xorg
     - pkgs.cd68k
     - pkgs.desktop
     - pkgs.dev
     - pkgs.dev-sdl
-    - pkgs.archlinux
     - pkgs.gpgpu
 
   'dump-*':
@@ -53,6 +53,7 @@ base:
 
   'fioi-archlinux-*':
     - main.fioi
+    - pkgs.fioi
     - pkgs.misc
     - pkgs.xorg
     - pkgs.desktop
@@ -60,4 +61,3 @@ base:
     - pkgs.dev-sdl
     - pkgs.archlinux
     - pkgs.ocaml
-    - pkgs.fioi
