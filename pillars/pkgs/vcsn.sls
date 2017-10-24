@@ -1,5 +1,5 @@
 pkgs:
-  - vcsn-git
+  - vcsn
   - jupyter
   - jupyter-notebook
   - python-regex
