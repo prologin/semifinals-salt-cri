@@ -38,6 +38,7 @@ base:
 
   'cuda-archlinux-*':
     - main.cuda-archlinux
+    - ssh.cuda-archlinux
     - pkgs.pie-archlinux
     - pkgs.misc
     - pkgs.xorg
