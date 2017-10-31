@@ -79,4 +79,4 @@ sshd_config:
   AuthorizedKeysFile: '.ssh/authorized_keys'
   Subsystem: 'sftp    /usr/lib/ssh/sftp-server'
   ChallengeResponseAuthentication: 'no'
-
+  X11Forwarding: 'yes'
