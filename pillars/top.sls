@@ -13,6 +13,7 @@ base:
     - pkgs.dev
     - pkgs.dev-iso
     - pkgs.dev-sdl
+    - pkgs.dev-torrent
     - pkgs.vcsn
 
   'sup-archlinux-*':
