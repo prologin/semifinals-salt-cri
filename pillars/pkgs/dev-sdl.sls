@@ -1,5 +1,5 @@
 pkgs:
-  - sdl 
+  - sdl
   - sdl_mixer
   - sdl_image
   - sdl_gfx
