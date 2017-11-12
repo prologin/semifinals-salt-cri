@@ -12,6 +12,7 @@ base:
     - pkgs.desktop
     - pkgs.dev
     - pkgs.dev-iso
+    - pkgs.dev-ruby
     - pkgs.dev-sdl
     - pkgs.dev-torrent
     - pkgs.vcsn
