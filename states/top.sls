@@ -10,6 +10,7 @@ base:
     - meta.pie
     - meta.xorg
     - display.wm.xfce
+    - dev.tcpdump
 
   'sup-archlinux-*':
     - meta.pie
