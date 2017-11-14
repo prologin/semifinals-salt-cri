@@ -4,3 +4,4 @@ pkgs:
   - mono
   - mono-tools
   - mesa-demos
+  - ncurses5-compat-libs
