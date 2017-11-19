@@ -19,6 +19,6 @@ dev-tcpdump-configure-wireshark:
 dev-tcpdump-configure-pam_epita:
   file.line:
     - name: /usr/local/bin/pam_epita
-    - content: usermod -a -G wireshark $PAM_USER || true
+    - content: usermod -a -G wireshark $PAM_USER
     - mode: insert
-    - after: '#!/bin/sh'
+    - after: 'if [ "$PAM_TYPE" = "open_session" ]; then'
