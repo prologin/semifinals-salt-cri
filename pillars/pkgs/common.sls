@@ -15,3 +15,4 @@ pkgs:
   - wget
   - zip
   - iproute2
+  - man-pages
