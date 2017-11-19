@@ -14,3 +14,4 @@ pkgs:
   - unzip
   - wget
   - zip
+  - iproute2
