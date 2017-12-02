@@ -24,6 +24,7 @@ pkgs:
   - tk
   - valgrind
   - check
+  - criterion
 
   # vcs
   - subversion
