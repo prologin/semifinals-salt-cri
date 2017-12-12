@@ -8,7 +8,7 @@ pkgs:
 
   # compilers
   - clang
-  - gcc-multilib
+  - gcc
   - go
 
   # misc
