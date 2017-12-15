@@ -1,22 +1,10 @@
 openssh:
   auth:
-    nicolas_lab_key:
-      - user: root
-        present: True
-        enc: ssh-rsa
-        name: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDWjq9xygRRdpfvfhNHOXGv0Xzn91KuR50O1Jfut22vaa7AKHw2eLsJVYcHX8QtKWiQRRG+CRTOqAOUkskMBpYvwC9gh8blFr1FJ+5c4iDPxNbUqBqyeCFRZrTjKxi7b3bniU5GpngTs94N+D95rGt/m6+iEYa50VXKVfTe8tHw10eK9egg7Sxv+SI39nhjBnUK31L+SmVf5VsUryAuvmt2ZSo288DiOFus1c4zyibhzVC036SgjkfIsfAu9v2W5m2prU4a4odzYv55WusiYsIK/WJDpXk2lDK2uXzYsXjyur0pAMxw2gBY4c4yQ7YqeTEB/tTHU0eYqpyuTm7XTr+l nicolas@nicolas"
-
     mareo_lab_key:
       - user: root
         present: True
         enc: ssh-rsa
         name: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDRjWonANQ/xE+bAU6e0Wd2s97ONLuHP9EPxdeQTf48NdMOBq/Zyuej8xRd91tHjsF230wMkQemDkSWgEmM9w99yXVt3IOtRizchAQLKEq+3R0eU6gES/gFZ9VL6bNei0jvWAhqNDn7bb/k5FmS+Joy4nsINxmHPBzhJFlcGfENrpUl/lPfWOoldkEjNZ8Wzaxx+OIcvoxsITlOVLu5zD/sRhDS82R6Dr4xPnJxVUxHfmB+ypRTfjA/gBW3JLFxe/GvgpfNpX20OsZPlzyLedW/Km3v3kUFDM5ygAArIAi/LCGohYLF+qkofrj3IM+mxI98ysa8g6SA5jKpC/SA0mZbadUfQJRrFYJp0cJcweMqshqwYG1F4uxm0dv2XTMaoSTn+RixKhIYi9TZK6FWzSZf96tb+n17ZybSv+y+KB1Qa5eJxxaGdFbwO2XAXLtTlhSfPW96AKOSD+d+0N+lJLPOj8HpQiv7+Qq2tUmtNIbelfg7Fzeei9WcsAJvXiHlj5ZOKREsZwe8Z+7gy1XtS57yaq2ogx27vpEYpPqjpX75LSvwxuDBr/5/gEZfDhucLo0LNT9w3mxu6LZCuQB1hNER2IoIADEvizEHyEBguqPYWo7542WJn87nXpy9wwYo7R5Pmv0hVOXCl9NcuEIcZDcvB31cjLLOEf2C546umjMVvw== Marin Hannache (Mareo)"
-
-    nicolas_lab_desktop_key:
-      - user: root
-        present: True
-        enc: ssh-rsa
-        name: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDNLJ4u+OKIsKN7hRGqXhUqQsVsz71iABHxaFnt3wHsTf77xhBKDz5AEVmO9lUUogJd2jVv/g2NY8g9LmiK/yoLB4zmfo7w6dQwW6UI3j9ntICKcX/uUc9+dztJC8ASWJRwtycpHdtSoM5nhsipOjjA2b4ikDs3C5pBnLiffCq+l5l+IYPbRhFJLODIjVqtdsJ5/g8Foox4Jv9bMm2Pl8ST5VZ9WuR6YgQyOIrytbG2h+FbwuYHKZmLgmwgHpAwI5JEs1EKz6v9+vaMymVFk9nPAaKW9pC+Bvs8kt2N5VDsP0M6g8XKP7EjXWRc3KC1FdWtCV4W+3roJ177KQ8Z37NP nicolas@nicolas-desk"
 
     antoine_lab_key:
       - user: root
