@@ -38,18 +38,6 @@ base:
     - pkgs.dev
     - pkgs.dev-python
 
-  'cuda-archlinux-*':
-    - main.cuda-archlinux
-    - ssh.cuda-archlinux
-    - pkgs.cuda-archlinux
-    - pkgs.misc
-    - pkgs.xorg
-    - pkgs.cd68k
-    - pkgs.desktop
-    - pkgs.dev
-    - pkgs.dev-sdl
-    - pkgs.gpgpu
-
   'dump-*':
     - main.dump
     - pkgs.dump
