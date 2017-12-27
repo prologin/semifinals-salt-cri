@@ -15,6 +15,7 @@ pkgs:
   - bison
   - boost
   - boost-libs
+  - capstone
   - doxygen
   - fakeroot
   - flex
