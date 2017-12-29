@@ -4,3 +4,5 @@ pkgs:
   - mono
   - mono-tools
   - vde2
+  - qemu
+
