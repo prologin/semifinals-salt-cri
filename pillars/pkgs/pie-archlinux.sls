@@ -3,3 +3,4 @@ pkgs:
   - gtkspell
   - mono
   - mono-tools
+  - vde2
