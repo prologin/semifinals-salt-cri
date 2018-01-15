@@ -23,6 +23,7 @@ base:
     - pkgs.xorg
     - pkgs.desktop
     - pkgs.dev
+    - pkgs.doc
     - pkgs.ocaml
 
   'browser-archlinux-*':
