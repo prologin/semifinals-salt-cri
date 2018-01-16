@@ -39,4 +39,5 @@ base:
   'cri-archlinux-*':
     - meta.pie
     - meta.xorg
+    - system.sudo_all
     - dev.tcpdump
