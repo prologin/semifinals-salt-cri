@@ -35,3 +35,8 @@ base:
     - meta.xorg
     - display.wm.xfce
     - dev.tuareg
+
+  'cri-archlinux-*':
+    - meta.pie
+    - meta.xorg
+    - dev.tcpdump

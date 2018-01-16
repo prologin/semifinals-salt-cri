@@ -53,3 +53,16 @@ base:
     - pkgs.dev-sdl
     - pkgs.archlinux
     - pkgs.ocaml
+
+  'cri-archlinux-*':
+    - main.cri-archlinux
+    - pkgs.cri-archlinux
+    - pkgs.xorg
+    - pkgs.cd68k
+    - pkgs.desktop
+    - pkgs.dev
+    - pkgs.dev-iso
+    - pkgs.dev-ruby
+    - pkgs.dev-sdl
+    - pkgs.dev-torrent
+    - pkgs.vcsn
