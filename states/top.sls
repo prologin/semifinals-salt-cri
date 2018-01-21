@@ -9,6 +9,7 @@ base:
   'pie-archlinux-*':
     - meta.pie
     - meta.xorg
+    - network.dns.static_resolv_conf
     - display.wm.xfce
     - dev.tcpdump
 
