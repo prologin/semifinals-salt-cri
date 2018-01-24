@@ -8,3 +8,7 @@ pkgs:
   - nvidia-dkms
   - opencl-nvidia
   - cuda
+
+  # Misc
+  - hashcat
+  - hashcat-utils
