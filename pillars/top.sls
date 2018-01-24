@@ -15,6 +15,7 @@ base:
     - pkgs.dev-ruby
     - pkgs.dev-sdl
     - pkgs.dev-torrent
+    - pkgs.gpgpu
     - pkgs.vcsn
 
   'sup-archlinux-*':
