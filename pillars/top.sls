@@ -15,7 +15,6 @@ base:
     - pkgs.dev-ruby
     - pkgs.dev-sdl
     - pkgs.dev-torrent
-    - pkgs.gpgpu
     - pkgs.vcsn
 
   'sup-archlinux-*':
@@ -67,3 +66,13 @@ base:
     - pkgs.dev-sdl
     - pkgs.dev-torrent
     - pkgs.vcsn
+
+  'gpgpu-archlinux-*':
+    - main.gpgpu-archlinux
+    - pkgs.pie-archlinux
+    - pkgs.gpgpu
+    - pkgs.misc
+    - pkgs.xorg
+    - pkgs.desktop
+    - pkgs.dev
+

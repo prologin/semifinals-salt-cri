@@ -42,3 +42,8 @@ base:
     - meta.xorg
     - system.sudo_all
     - dev.tcpdump
+
+  'gpgpu-archlinux-*':
+    - meta.pie
+    - meta.xorg
+    - display.wm.xfce
