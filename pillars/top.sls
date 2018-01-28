@@ -11,10 +11,9 @@ base:
     - pkgs.cd68k
     - pkgs.desktop
     - pkgs.dev
-    - pkgs.dev-iso
+    - pkgs.dev-httpd
     - pkgs.dev-ruby
-    - pkgs.dev-sdl
-    - pkgs.dev-torrent
+    - pkgs.dev-tc
     - pkgs.vcsn
 
   'sup-archlinux-*':
@@ -75,4 +74,3 @@ base:
     - pkgs.xorg
     - pkgs.desktop
     - pkgs.dev
-
