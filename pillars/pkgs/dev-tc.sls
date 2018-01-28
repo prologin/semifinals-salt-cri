@@ -2,6 +2,6 @@ pkgs:
   - bison
   - boost
   - flex
-  - havm
+  - havm-git
   - llvm
   - python-yaml
