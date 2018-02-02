@@ -1,3 +1,14 @@
+{% if pillar.get('pkgs-cri') %}
+system-pkgs-cri:
+  pkg.installed:
+    - fromrepo: cri
+    - reinstall: True
+    - pkgs:
+      {%- for pkg in pillar.get('pkgs-cri', {}) %}
+        - {{ pkg }}
+      {% endfor %}
+{% endif %}
+
 {% if pillar.get('pkgs') %}
 system-pkgs:
   pkg.installed:
