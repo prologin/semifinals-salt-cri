@@ -5,3 +5,5 @@
 ! colors
 *.foreground    : white
 *.background    : black
+
+URxvt.font:             xft:DejaVu Sans Mono:pixelsize=10:antialias=true:hinting=true
