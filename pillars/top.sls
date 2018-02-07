@@ -13,6 +13,7 @@ base:
     - pkgs.dev
     - pkgs.dev-httpd
     - pkgs.dev-ruby
+    - pkgs.dev-sdl
     - pkgs.dev-tc
     - pkgs.vcsn
 
