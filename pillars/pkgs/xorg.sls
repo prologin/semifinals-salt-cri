@@ -7,6 +7,7 @@ pkgs:
   - xsel
   - ttf-dejavu
   - ttf-liberation
+  - ttf-symbola
   - xterm
   - lib32-libx11
   - xorg-iceauth
