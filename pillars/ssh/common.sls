@@ -6,12 +6,6 @@ openssh:
         enc: ssh-rsa
         name: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDRjWonANQ/xE+bAU6e0Wd2s97ONLuHP9EPxdeQTf48NdMOBq/Zyuej8xRd91tHjsF230wMkQemDkSWgEmM9w99yXVt3IOtRizchAQLKEq+3R0eU6gES/gFZ9VL6bNei0jvWAhqNDn7bb/k5FmS+Joy4nsINxmHPBzhJFlcGfENrpUl/lPfWOoldkEjNZ8Wzaxx+OIcvoxsITlOVLu5zD/sRhDS82R6Dr4xPnJxVUxHfmB+ypRTfjA/gBW3JLFxe/GvgpfNpX20OsZPlzyLedW/Km3v3kUFDM5ygAArIAi/LCGohYLF+qkofrj3IM+mxI98ysa8g6SA5jKpC/SA0mZbadUfQJRrFYJp0cJcweMqshqwYG1F4uxm0dv2XTMaoSTn+RixKhIYi9TZK6FWzSZf96tb+n17ZybSv+y+KB1Qa5eJxxaGdFbwO2XAXLtTlhSfPW96AKOSD+d+0N+lJLPOj8HpQiv7+Qq2tUmtNIbelfg7Fzeei9WcsAJvXiHlj5ZOKREsZwe8Z+7gy1XtS57yaq2ogx27vpEYpPqjpX75LSvwxuDBr/5/gEZfDhucLo0LNT9w3mxu6LZCuQB1hNER2IoIADEvizEHyEBguqPYWo7542WJn87nXpy9wwYo7R5Pmv0hVOXCl9NcuEIcZDcvB31cjLLOEf2C546umjMVvw== Marin Hannache (Mareo)"
 
-    antoine_lab_key:
-      - user: root
-        present: True
-        enc: ssh-rsa
-        name: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDjP773kL8olTsi6RZFgWLTRTb1fwGzc4mD7jSnAAI1DKDamaL/+UUoWBGi8MEzpz9p5BNCPt0WxnFHoF4wq3EQsl7FgnEKcXkCBBbabUNQ5lGdK3cAZz26QpceqcAbToNU3S/GiVjwEcROlF/Q9ZI9swHuG0lfQ3+qqarFzCIEJC+1kRvrRDQZJImcuf2uhGkMwDSagg6S7ySMfMilBIqZqAWrB5UVEQQMAL23209h159Iyu+eZjKkjcUghyRnJkgFvWQAvlx6aXk+al5awMfXMSY7lSOI57L2SV+xN5CkiSytEuSpTKfVjrt3IrlkE2acyTQg/h2bEvxmvUlAkJwMsFJnHBKnNWQB39zV58Xy5yessmaMCYzPcGIWGZvk/SGEvi7l3kn36Tnj71+fkru5YeSdmZQmHFvWsfMM1N17u4aY8g4kect8hMPW014dJpi/AljH9F73rV8c6yrbCKVZkwxguV+j6JhkW6bA3cQXMSlhIDuK161DJ8cPtd7ZLW7FEO1iGjSuVrTPyzJx2WaSrNISS07BIItis1FVDSAJ74FtbYnWcGmBnZmjYHbwDjAG+uXFGhaWxrGkLxtR0h3U8SmMuoudZzh7ThVy55GkBOH1YzP+XHC2AIOq3ubvmhH2/aazdWnSQVc0ydVQs1VVD0AgXweGjUS6uzjmrp7Jgw== bardou_a@epita.fr"
-
     jordan_lab_key:
       - user: root
         present: True
