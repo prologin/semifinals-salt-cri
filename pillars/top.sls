@@ -11,6 +11,7 @@ base:
     - pkgs.cd68k
     - pkgs.desktop
     - pkgs.dev
+    - pkgs.dev-func
     - pkgs.dev-httpd
     - pkgs.dev-ruby
     - pkgs.dev-sdl
