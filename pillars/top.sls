@@ -17,6 +17,7 @@ base:
     - pkgs.dev-sdl
     - pkgs.dev-tc
     - pkgs.vcsn
+    - pkgs.dev-sql
 
   'sup-archlinux-*':
     - main.sup-archlinux
