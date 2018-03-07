@@ -2,6 +2,8 @@ network-afs-install-openafs:
   pkg.installed:
     - pkgs:
       - openafs
+    - require:
+      - system-repository-conf
 
 network-afs-enable-openafs:
   service.running:

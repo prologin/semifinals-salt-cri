@@ -7,6 +7,8 @@ system-pkgs-cri:
       {%- for pkg in pillar.get('pkgs-cri', {}) %}
         - {{ pkg }}
       {% endfor %}
+    - require:
+      - system-repository-conf
 {% endif %}
 
 {% if pillar.get('pkgs') %}
@@ -16,6 +18,8 @@ system-pkgs:
       {%- for pkg in pillar.get('pkgs', {}) %}
         - {{ pkg }}
       {% endfor %}
+    - require:
+      - system-repository-conf
 {% endif %}
 
 system-pkgs-vim:
@@ -25,3 +29,5 @@ system-pkgs-vim:
 {% else %}
     - name: vim
 {% endif %}
+    - require:
+      - system-repository-conf
