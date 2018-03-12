@@ -1,5 +1,5 @@
 pkgs:
   - gradle
-  - intellij-idea-ultimate-edition
+  - intellij-idea-ue-eap
   - jdk9-openjdk
   - openjdk9-doc
