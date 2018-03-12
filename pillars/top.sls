@@ -17,6 +17,7 @@ base:
     - pkgs.dev-ruby
     - pkgs.dev-sdl
     - pkgs.dev-tc
+    - pkgs.dev-tc-backend
     - pkgs.vcsn
     - pkgs.dev-sql
 
