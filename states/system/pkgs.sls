@@ -9,6 +9,7 @@ system-pkgs-cri:
       {% endfor %}
     - require:
       - system-repository-conf
+      - system-pkgs
 {% endif %}
 
 {% if pillar.get('pkgs') %}
