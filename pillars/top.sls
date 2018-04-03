@@ -5,21 +5,19 @@ base:
 
   'pie-archlinux-*':
     - main.pie-archlinux
-    - pkgs.pie-archlinux
-    - pkgs.misc
-    - pkgs.xorg
     - pkgs.cd68k
     - pkgs.desktop
     - pkgs.dev
     - pkgs.dev-func
-    - pkgs.dev-httpd
     - pkgs.dev-java
     - pkgs.dev-ruby
     - pkgs.dev-sdl
     - pkgs.dev-tc
     - pkgs.dev-tc-backend
+    - pkgs.misc
+    - pkgs.pie-archlinux
     - pkgs.vcsn
-    - pkgs.dev-sql
+    - pkgs.xorg
 
   'sup-archlinux-*':
     - main.sup-archlinux
