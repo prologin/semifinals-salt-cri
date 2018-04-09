@@ -12,6 +12,7 @@ base:
     - pkgs.dev-java
     - pkgs.dev-ruby
     - pkgs.dev-sdl
+    - pkgs.dev-sql
     - pkgs.dev-tc
     - pkgs.dev-tc-backend
     - pkgs.misc
