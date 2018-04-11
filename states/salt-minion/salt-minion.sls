@@ -16,7 +16,7 @@ salt-minion-configure-states-environment:
   file.replace:
     - name: /etc/salt/minion
     - pattern: "^environment:.*$"
-    - repl: "environment: {{ opts['environment'] }}"
+    - repl: "environment: {{ opts['saltenv'] }}"
     - append_if_not_found: True
     - watch_in:
       - service: salt-minion-enable

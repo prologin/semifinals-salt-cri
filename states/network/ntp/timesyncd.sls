@@ -1,3 +1,8 @@
+network-ntp-group:
+  group.present:
+    - name: systemd-timesync
+    - system: True
+
 network-ntp-user:
   user.present:
     - name: systemd-timesync
@@ -6,6 +11,8 @@ network-ntp-user:
     - shell: /sbin/nologin
     - system: True
     - fullname: systemd Time Synchronization
+    - require:
+      - network-ntp-group
 
 network-ntp-configure-timesyncd:
   file.managed:

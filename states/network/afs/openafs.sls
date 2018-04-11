@@ -30,12 +30,20 @@ network-afs-configure-openafs-thiscell:
     - watch_in:
       - service : network-afs-enable-openafs
 
+# Remove due to non utf-8 char, salt can't ignore it
+network-afs-remove-openafs-cellservdb:
+  file.absent:
+    - name: /etc/openafs/CellServDB
+    - require:
+      - network-afs-install-openafs
+
 network-afs-configure-openafs-cellservdb:
   file.managed:
     - name: /etc/openafs/CellServDB
     - source: salt://network/afs/files/CellServDB
     - require:
       - pkg: network-afs-install-openafs
+      - network-afs-remove-openafs-cellservdb
     - watch_in:
       - service : network-afs-enable-openafs
 

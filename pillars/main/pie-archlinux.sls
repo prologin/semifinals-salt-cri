@@ -18,4 +18,4 @@ users:
 salt-minion-prefix: pie-archlinux
 
 sddm-title: "--- Arch Linux ---"
-sddm-footer: "build: {{ "now"|strftime("%y%m%d-%H%m") }}"
+sddm-footer: "build: yes"
