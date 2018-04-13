@@ -1,0 +1,10 @@
+[Unit]
+Description=Aria2c
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/sh -c '/usr/bin/aria2c --enable-dht=false --enable-dht6=false --seed-ratio=0 -V -d /srv/torrent/rootfs0 /srv/torrent/rootfs0/*.torrent -O 1=rootfs.img'
+
+[Install]
+WantedBy=multi-user.target

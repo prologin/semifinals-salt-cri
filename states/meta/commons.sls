@@ -2,6 +2,7 @@ include:
   - system.locale
   - system.repos
   - system.pkgs
+  - system.aria2
   - network.dhcp
   - network.dns
   - network.ntp
