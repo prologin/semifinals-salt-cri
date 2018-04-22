@@ -4,7 +4,6 @@ pkgs:
   - geany
   - kate
   - codeblocks
-  - ddd
   - fpc
   - tk
   - jdk8-openjdk
