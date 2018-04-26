@@ -26,6 +26,7 @@ pkgs:
   - valgrind
   - check
   - criterion
+  - benchmark
 
   # vcs
   - subversion
