@@ -15,6 +15,7 @@ base:
     - pkgs.dev-sql
     - pkgs.dev-tc
     - pkgs.dev-tc-backend
+    - pkgs.matlab
     - pkgs.misc
     - pkgs.pie-archlinux
     - pkgs.vcsn
