@@ -5,3 +5,4 @@ pkgs:
   - havm-git
   - llvm
   - python-yaml
+  - lib32-gcc-libs
