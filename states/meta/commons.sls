@@ -6,9 +6,6 @@ include:
   - network.dhcp
   - network.dns
   - network.ntp
-  - openssh
-  - openssh.auth
-  - openssh.config
   - salt-minion
   - system.coredump
   - system.login-watch-sessions
@@ -17,3 +14,6 @@ include:
   - users
   - users.user_files
   - system.users.empty_password_workaround
+  - openssh
+  - openssh.auth
+  - openssh.config
