@@ -1,2 +1,3 @@
 pkgs:
   - sl
+  - sfml
