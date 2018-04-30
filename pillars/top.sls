@@ -27,17 +27,9 @@ base:
     - pkgs.cd68k
     - pkgs.desktop
     - pkgs.dev
-    - pkgs.dev-func
     - pkgs.dev-java
-    - pkgs.dev-ruby
-    - pkgs.dev-sdl
-    - pkgs.dev-sql
-    - pkgs.dev-tc
-    - pkgs.dev-tc-backend
-    - pkgs.matlab
     - pkgs.misc
     - pkgs.pie-archlinux
-    - pkgs.vcsn
     - pkgs.xorg
     - ssh.hadoop
 
