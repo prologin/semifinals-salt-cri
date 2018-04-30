@@ -19,4 +19,4 @@ users:
 salt-minion-prefix: sup-archlinux
 
 sddm-title: "--- Arch Linux SUP ---"
-sddm-footer: "build: {{ "now"|strftime("%y%m%d-%H%m") }}"
+sddm-footer: "build: 30 april 2018"

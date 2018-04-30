@@ -37,6 +37,7 @@ pkgs:
   - rlwrap
   - rxvt-unicode
   - xorg-xeyes
+  - xorg-xkill
   - zenity
 
   # pdf reader
