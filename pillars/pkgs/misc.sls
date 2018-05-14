@@ -1,4 +1,4 @@
 pkgs:
   - sl
   - sfml
-  - textlive-fontextra
+  - texlive-fontsextra
