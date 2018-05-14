@@ -41,6 +41,7 @@ base:
     - pkgs.dev
     - pkgs.doc
     - pkgs.ocaml
+    - pkgs.misc
 
   'browser-archlinux-*':
     - main.browser-archlinux
