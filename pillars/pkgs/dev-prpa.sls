@@ -1,0 +1,3 @@
+pkgs:
+  - benchmark
+  - intel-tbb

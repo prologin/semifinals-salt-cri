@@ -11,6 +11,7 @@ base:
     - pkgs.dev-func
     - pkgs.dev-java
     - pkgs.dev-k
+    - pkgs.dev-prpa
     - pkgs.dev-ruby
     - pkgs.dev-sdl
     - pkgs.dev-sql
