@@ -18,7 +18,7 @@ base:
     - meta.xorg
     - network.dns.static_resolv_conf
     - display.wm.xfce
-    - dev.tcpdump
+    - dev.toree
 
   'sup-archlinux-*':
     - meta.pie
