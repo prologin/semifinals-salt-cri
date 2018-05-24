@@ -30,6 +30,7 @@ base:
     - pkgs.desktop
     - pkgs.dev
     - pkgs.dev-java
+    - pkgs.dev-scala
     - pkgs.misc
     - pkgs.pie-archlinux
     - pkgs.xorg
