@@ -18,7 +18,6 @@ base:
     - pkgs.dev-tc
     - pkgs.dev-tc-backend
     - pkgs.dev-nodejs
-    - pkgs.matlab
     - pkgs.misc
     - pkgs.pie-archlinux
     - pkgs.vcsn
