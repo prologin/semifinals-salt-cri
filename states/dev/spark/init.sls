@@ -20,4 +20,4 @@ dev-spark-remove-tmp-files:
   file.absent:
     - name: /tmp/spark.tgz
     - require:
-      - file: dev-spark-extrack-spark
+      - archive: /opt/
