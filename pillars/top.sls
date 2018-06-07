@@ -34,7 +34,7 @@ base:
     - pkgs.pie-archlinux
     - pkgs.xorg
     - ssh.hadoop
-    - dev.spark.spark-1.6.3
+    - dev.spark.spark-1-6-3
 
   'sup-archlinux-*':
     - main.sup-archlinux
