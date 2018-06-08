@@ -18,4 +18,4 @@ users:
 salt-minion-prefix: gpgpu-archlinux
 
 sddm-title: "--- Arch Linux (GPGPU) ---"
-sddm-footer: "build: {{ "now"|strftime("%y%m%d-%H%m") }}"
+sddm-footer: "build: yes"
