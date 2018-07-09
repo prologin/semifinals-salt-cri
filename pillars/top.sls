@@ -17,7 +17,6 @@ base:
     - pkgs.dev-sdl
     - pkgs.dev-sql
     - pkgs.dev-tc
-    - pkgs.dev-tc-backend
     - pkgs.dev-nodejs
     - pkgs.misc
     - pkgs.pie-archlinux
