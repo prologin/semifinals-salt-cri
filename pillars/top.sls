@@ -10,6 +10,7 @@ base:
     - pkgs.dev
     - pkgs.dev-func
     - pkgs.dev-java
+    - pkgs.dev-java8
     - pkgs.dev-k
     - pkgs.dev-prpa
     - pkgs.dev-ruby
