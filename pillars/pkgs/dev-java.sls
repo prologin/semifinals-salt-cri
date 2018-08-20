@@ -1,7 +1,7 @@
 pkgs:
   - gradle
   - intellij-idea-ue-eap
-  - jdk9-openjdk
-  - jre9-openjdk
-  - openjdk9-doc
+  - jdk10-openjdk
+  - jre10-openjdk
+  - openjdk10-doc
   - protobuf
