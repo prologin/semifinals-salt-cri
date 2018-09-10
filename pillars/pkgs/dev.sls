@@ -12,9 +12,6 @@ pkgs:
   - go
 
   # misc
-  - bison
-  - boost
-  - boost-libs
   - capstone
   - doxygen
   - fakeroot
