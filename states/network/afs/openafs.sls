@@ -2,6 +2,7 @@ network-afs-install-openafs:
   pkg.installed:
     - pkgs:
       - openafs
+      - openafs-modules-dkms
     - require:
       - system-repository-conf
 
