@@ -6,6 +6,7 @@ include:
   - network.dhcp
   - network.dns
   - network.ntp
+  - network.fix-systemd-networkd-wait-online
   - salt-minion
   - system.coredump
   - system.login-watch-sessions
