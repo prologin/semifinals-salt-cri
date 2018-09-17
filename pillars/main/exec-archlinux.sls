@@ -7,6 +7,6 @@ users:
       enabled: True
       source: salt://files/exec-archlinux/home/root
 
-salt-minion-prefix: dump
+salt-minion-prefix: exec-archlinux
 
 auth-exec-script: /root/exec.sh
