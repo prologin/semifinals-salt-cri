@@ -55,6 +55,9 @@ base:
     - main.dump
     - pkgs.dump
 
+  'exec-*':
+    - main.exec-archlinux
+
   'fioi-archlinux-*':
     - main.fioi
     - pkgs.fioi

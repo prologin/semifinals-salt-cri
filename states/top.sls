@@ -38,6 +38,9 @@ base:
   'dump-*':
     - auth.exec
 
+  'script-*':
+    - auth.exec
+
   'fioi-archlinux-*':
     - meta.pie
     - meta.xorg
