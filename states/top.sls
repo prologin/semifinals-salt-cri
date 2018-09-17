@@ -38,7 +38,7 @@ base:
   'dump-*':
     - auth.exec
 
-  'script-*':
+  'exec-archlinux-*':
     - auth.exec
 
   'fioi-archlinux-*':
