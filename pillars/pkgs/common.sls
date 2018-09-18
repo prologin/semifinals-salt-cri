@@ -16,4 +16,5 @@ pkgs:
   - zip
   - iproute2
   - man-pages
+  - lsof
   - systemd-sysvcompat
