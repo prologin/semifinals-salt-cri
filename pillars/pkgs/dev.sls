@@ -9,7 +9,6 @@ pkgs:
   # compilers
   - clang
   - gcc
-  - go
 
   # misc
   - capstone
