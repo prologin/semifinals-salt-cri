@@ -1,6 +1,3 @@
-pkgs-cri:
-  - bison
-
 pkgs:
   - boost
   - flex
