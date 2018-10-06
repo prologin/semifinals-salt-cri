@@ -15,4 +15,9 @@ users:
       enabled: True
       source: salt://files/default/home/root
 
+sudoers:
+  groups:
+    admins:
+      - 'ALL=(ALL) ALL'
+
 sddm-footer: "build: {{ "now"|strftime("%y%m%d-%H%m") }}"
