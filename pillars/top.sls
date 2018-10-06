@@ -1,5 +1,6 @@
 base:
   '*':
+    - main.common
     - ssh.common
     - pkgs.common
 

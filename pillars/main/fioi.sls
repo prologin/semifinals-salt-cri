@@ -18,6 +18,5 @@ users:
 salt-minion-prefix: "fioi-archlinux"
 
 sddm-title: "France-IOI"
-sddm-footer: "build: {{ "now"|strftime("%y%m%d-%H%m") }}"
 
 vim-graphic: True
