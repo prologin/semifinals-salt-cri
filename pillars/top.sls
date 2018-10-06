@@ -44,14 +44,6 @@ base:
     - pkgs.browser-archlinux
     - pkgs.xorg
 
-  'coding-archlinux-*':
-    - main.coding
-    - pkgs.coding
-    - pkgs.xorg
-    - pkgs.desktop
-    - pkgs.dev
-    - pkgs.dev-python
-
   'dump-*':
     - main.dump
     - pkgs.dump

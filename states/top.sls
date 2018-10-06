@@ -30,11 +30,6 @@ base:
     - meta.xorg-nodm
     - auth.autologin
 
-  'coding-archlinux-*':
-    - meta.pie
-    - meta.xorg
-    - display.wm.xfce
-
   'dump-*':
     - auth.exec
 
