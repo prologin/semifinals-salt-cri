@@ -1,0 +1,57 @@
+#!/bin/bash
+
+KEYNAME=${KEYNAME:-"git-autoconfig"}
+
+create_key()
+{
+	if [ -f "$HOME/.ssh/$1" ]; then
+		echo "SSH Key already generated."
+		return 0
+	fi
+	echo "Generating key: $USER@auto-$2"
+	ssh-keygen -q -b 4096 -f "$HOME/.ssh/$1" -C "$USER@auto-$2"
+}
+
+configure_git()
+{
+	git config --global user.name "$1"
+	git config --global user.mail "$2"
+}
+
+push_key()
+{
+	http_code=$(curl -X POST -o "/tmp/$1-$3-answer.json" --header 'Content-Type: text/plain' \
+		-d "`cat "$HOME/.ssh/$3.pub"`" \
+		"https://cri.epita.fr/api/users/$1/ssh_keys/" --user "$1:$2" \
+		-s -w '%{http_code}')
+	if [ $http_code -ne 200 ]; then
+		echo "`cat "/tmp/$1-$3-answer.json"`"
+	else
+		echo "Key successfully pushed"
+	fi
+	rm "/tmp/$1-$3-answer.json"
+}
+
+echo -n "Password for user $USER: "
+read -s PASSWORD
+echo
+RESULT=$(curl -X GET 'https://cri.epita.fr/api/users/me/' --user "$USER:$PASSWORD" -s -f)
+if [ $? -ne 0 ]; then
+	echo "Invalid password"
+	exit 1
+fi
+
+RESULT=$(echo $RESULT | python3 -c "import sys, json; res=json.load(sys.stdin); print(res['login'], '\n' + res['firstname'], res['lastname'], '\n' + res['mail'])")
+
+
+LOGIN=$(echo "$RESULT" | head -n 1)
+FULLNAME=$(echo "$RESULT" | head -n 2 | tail -n 1)
+EMAIL=$(echo "$RESULT" | head -n 3 | tail -n 1)
+echo "Using informations:"
+echo "- login: $LOGIN"
+echo "- fullname: $FULLNAME"
+echo "- email: $EMAIL"
+
+create_key "$KEYNAME" `date +"%s"`
+configure_git $FULLNAME $EMAIL
+push_key "$USER" "$PASSWORD" "$KEYNAME"

@@ -23,6 +23,7 @@ base:
   'sup-archlinux-*':
     - meta.pie
     - meta.xorg
+    - misc.git-scripts
     - display.wm.xfce
     - dev.tuareg
 

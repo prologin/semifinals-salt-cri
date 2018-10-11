@@ -1,0 +1,10 @@
+#!/bin/sh
+
+PATH=/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/local/sbin
+
+echo "* Trying to submit"
+
+git checkout master
+git add --all
+git commit -m "Submission" --allow-empty
+git push origin master
