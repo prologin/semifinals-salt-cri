@@ -11,19 +11,23 @@ C_M="$E[35m" # Magent
 C_C="$E[36m" # Cyan
 
 
-success() {
+success()
+{
 	echo -e "${C_G}$*${C_RST}"
 }
 
-info() {
+info()
+{
 	echo -e "${C_C}$*${C_RST}"
 }
 
-warning() {
+warning()
+{
 	echo -e "${C_Y}$*${C_RST}"
 }
 
-error() {
+error()
+{
 	echo -e "${C_R}$*${C_RST}"
 }
 
@@ -42,6 +46,15 @@ create_key()
 	else
 		error "Error during SSH key generation, aborting..."
 		exit 1
+	fi
+}
+
+check_ssh_config()
+{
+	if grep -qs IdentityFile "$HOME/.ssh/config"; then
+		error "A SSH config file exists with explicit key selection"
+		error "Moving SSH config file to $HOME/.ssh/config.bak..."
+		mv "$HOME/.ssh/config" "$HOME/.ssh/config.bak"
 	fi
 }
 
@@ -89,5 +102,6 @@ FULLNAME=$(echo "$RESULT" | head -n 2 | tail -n 1)
 EMAIL=$(echo "$RESULT" | head -n 3 | tail -n 1)
 
 create_key "$KEYNAME"
+check_ssh_config
 configure_git "$FULLNAME" "$EMAIL"
 push_key "$USER" "$PASSWORD" "$KEYNAME"
