@@ -1,57 +1,93 @@
 #!/bin/bash
 
-KEYNAME=${KEYNAME:-"git-autoconfig"}
+KEYNAME=${KEYNAME:-"id_rsa"}
+
+E="\033"
+C_RST="$E[0m"
+C_R="$E[31m" # Red
+C_G="$E[32m" # Green
+C_Y="$E[33m" # Yellow
+C_M="$E[35m" # Magent
+C_C="$E[36m" # Cyan
+
+
+success() {
+	echo -e "${C_G}$*${C_RST}"
+}
+
+info() {
+	echo -e "${C_C}$*${C_RST}"
+}
+
+warning() {
+	echo -e "${C_Y}$*${C_RST}"
+}
+
+error() {
+	echo -e "${C_R}$*${C_RST}"
+}
+
 
 create_key()
 {
-	if [ -f "$HOME/.ssh/$1" ]; then
-		echo "SSH Key already generated."
+	if [ -f "$HOME/.ssh/$1" -a -f "$HOME/.ssh/$1.pub" ]; then
+		success "SSH Key already generated at $HOME/.ssh/$1.pub"
 		return 0
 	fi
-	echo "Generating key: $USER@auto-$2"
-	ssh-keygen -q -b 4096 -f "$HOME/.ssh/$1" -C "$USER@auto-$2"
+	info "Generating new key: $USER@git-autoconfig..."
+	ssh-keygen -q -b 4096 -f "$HOME/.ssh/$1" -t rsa \
+		-C "$USER@git-autoconfig"
+	if [ $? -eq 0 ] || [ -f "$HOME/.ssh/$1" -a -f "$HOME/.ssh/$1.pub" ]; then
+		success "New SSH key generated."
+	else
+		error "Error during SSH key generation, aborting..."
+		exit 1
+	fi
 }
 
 configure_git()
 {
+	info "Configuring git with:"
+	info "  - fullname: $1"
+	info "  - email: $2"
+
 	git config --global user.name "$1"
 	git config --global user.mail "$2"
 }
 
 push_key()
 {
-	http_code=$(curl -X POST -o "/tmp/$1-$3-answer.json" --header 'Content-Type: text/plain' \
+	http_code=$(curl -X POST -o "/tmp/$1-$3-answer.json" \
+		--header 'Content-Type: text/plain' \
 		-d "`cat "$HOME/.ssh/$3.pub"`" \
 		"https://cri.epita.fr/api/users/$1/ssh_keys/" --user "$1:$2" \
 		-s -w '%{http_code}')
 	if [ $http_code -ne 200 ]; then
-		echo "`cat "/tmp/$1-$3-answer.json"`"
+		error "Error when uploading public key:"
+		error "`cat "/tmp/$1-$3-answer.json"`"
 	else
-		echo "Key successfully pushed"
+		success "Key successfully pushed"
 	fi
 	rm "/tmp/$1-$3-answer.json"
 }
 
+warning "When asked for a password of passphrase you won't see what you are" \
+	"are typing, don't be surprised"
 echo -n "Password for user $USER: "
 read -s PASSWORD
 echo
-RESULT=$(curl -X GET 'https://cri.epita.fr/api/users/me/' --user "$USER:$PASSWORD" -s -f)
+RESULT=$(curl -X GET 'https://cri.epita.fr/api/users/me/' \
+	--user "$USER:$PASSWORD" -s -f)
 if [ $? -ne 0 ]; then
-	echo "Invalid password"
+	error "Invalid password"
 	exit 1
 fi
 
 RESULT=$(echo $RESULT | python3 -c "import sys, json; res=json.load(sys.stdin); print(res['login'], '\n' + res['firstname'], res['lastname'], '\n' + res['mail'])")
-
-
 LOGIN=$(echo "$RESULT" | head -n 1)
 FULLNAME=$(echo "$RESULT" | head -n 2 | tail -n 1)
 EMAIL=$(echo "$RESULT" | head -n 3 | tail -n 1)
-echo "Using informations:"
-echo "- login: $LOGIN"
-echo "- fullname: $FULLNAME"
-echo "- email: $EMAIL"
 
-create_key "$KEYNAME" `date +"%s"`
-configure_git $FULLNAME $EMAIL
+create_key "$KEYNAME"
+configure_git "$FULLNAME" "$EMAIL"
 push_key "$USER" "$PASSWORD" "$KEYNAME"
