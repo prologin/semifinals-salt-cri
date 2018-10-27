@@ -18,3 +18,4 @@ include:
   - openssh
   - openssh.auth
   - openssh.config
+  - sudoers
