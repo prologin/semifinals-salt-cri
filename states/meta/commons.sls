@@ -2,6 +2,7 @@ include:
   - system.locale
   - system.repos
   - system.pkgs
+  - system.ruby-gems
   - system.aria2
   - network.dhcp
   - network.dns
