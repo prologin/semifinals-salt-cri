@@ -5,10 +5,9 @@ system-pkgs-ruby:
       - ruby
       - rubygems
 
-system-ruby-gems:
-  gem.installed:
-    - names:
-    {% for gem in pillar.get('ruby-gems') %}
-      - {{ gem }}
-    {% endfor %}
+{% for gem in pillar.get('ruby-gems') %}
+system-ruby-gems-{{ gem }}:
+  cmd.run:
+    - name: "gem install --no-user-install --no-document {{ gem }}"
+{% endfor %}
 {% endif %}
