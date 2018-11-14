@@ -17,6 +17,12 @@ openssh:
         present: True
         enc: ssh-rsa
         name: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC17pnCLEvu1QCkOfl+0wsFvY/IlNtV78cYmS2Ei2R6Py1aRT1rRzdR6eBaLVL0zayhH9Nu5CWzsd/u+ag3m+S+MHHF0sBoXJZKo/gV/L4hc8mEbS7QLD1IoMX7wHGB1g5nVPXLAwenwH8wGavfD+N4yj4MtG+5ThBXi72CEQ722/BpEOU+u4BilxFtN72bc6dZHrx/ekDDD638fcTykzPMPXUAIqq4NrFTYSU+NwRyrkSAQld4u9cJc9FWgPO1kqYOpVMfYh9YqkajTaKRLcYDceGWJ8xz7dJ1bRhGLNJb7np4pKBxnMl2LVjzUGnx2Ns1dIhbFo0FK6KYqQp7o0oBhyHNNESkkzhUuB2zYNDTWy7yBjmfYWhG2Ckk4zllL4+r129KSg6B4xxbkKCExVqv9pWRKCbklHLHiGw9mvMoZbRNDvWU5cARURo4rxrHN67bubTa/L0Y3O8JTLtyVCE4y8Hk4yIpyemu7z3hbBy0KTWKsSc2cJq6f4hrNr1Qp1O6aUA3NQheabIRXaKlSt38uVUGBj/79VXXcHON8gd1yUpqP/iGN064DMh5RaOWyNPBaHm2WrQKfvim2TH8RZgVn++6qCwwgo8jMXLAl2SLear3fUvrSbs7JfhT7yiF1V/8plY/bvJuDd0OkJBjrgm+43/hVmI6EiFIghMsQMcREw== jordan@jordan"
+
+    mathis_cri_desktop_key:
+      - user: root
+        present: True
+        enc: ssh-rsa
+        name: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCddoCs0/2utb2t6taMmbgrpVPeeGh608FBqQT5MymfumER3Ok58mqB+BqNJCo80oEZ0AH9y+xjt1sK1fTRYrfM5N9JjJvDlIgZjZqhoICWoX+Oa4pa9vfU1VbEp9PbfQVTfdNh+LAmXPWgxOrF+yRau7s3TdsiaHyItcmo0gjbsS3/Bp+r1T4qn102CYLtUbUR91bQrEXbJOh/x5YE31r+sKOl81x26KxEtVcKrBKm++EP/00WE/erfhWC/k55Rqzt5zWXZMQpKgVtB6tsX/EAzkU4Ua+61XX1Kr2lQEuTOqus8Mu82CpaiyNSVrejZOZ0y3C7pPCeLHEkzY80jj0ylCgXfbvFjkWwfFf+B7Td8RHV1wMXK0Zj64RFYUrqwywdZbbB+soc86ikcWnhAfs939rcoCwsSIekPl9dT38RbqoMx7QCPs8ezoiEELnA3f8cpEArpjC+WWbTKPFkjKJz3HOJ+B25J3WfKQDGWLrYvn75/UF1pXNhSvUpo5uju2T3wHNF65YfXXUvfhnznh9jW+FXqKBkep6Ur5c1evNZwTthLb4XjWV9D7RJX8LP6eMqMhnxby+PY3j5J++kzGaO97+NmV2HWgs783vgoqCFI3WN+etWH+Y5bCslnhj5er3GQNJPIVIDLXgyL3Shlt5bZSLhI5QnVNwWRqQm3lN6jQ== mathis@cri.epita.net"
   provide_ecdsa_keys: True
   provide_rsa_keys: True
   ecdsa:
