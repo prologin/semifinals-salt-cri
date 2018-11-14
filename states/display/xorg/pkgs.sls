@@ -1,5 +1,5 @@
 display-xorg-install:
-  pkg.latest:
+  pkg.installed:
     - pkgs:
       - xorg-server
       - xorg-xinit
