@@ -23,6 +23,7 @@ pkgs:
   - valgrind
   - check
   - criterion
+  - ctags
 
   # vcs
   - subversion
