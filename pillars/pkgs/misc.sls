@@ -3,3 +3,4 @@ pkgs:
   - csfml
   - texlive-fontsextra
   - tensorflow
+  - python-tensorflow
