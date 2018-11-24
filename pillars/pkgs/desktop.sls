@@ -9,6 +9,7 @@ pkgs:
   - bluez
   - bluez-utils
   - bluez-tools
+  - blueberry
 
   # browsers
   - firefox
