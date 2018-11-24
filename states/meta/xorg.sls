@@ -1,7 +1,6 @@
 include:
-  - display.xorg
-  - display.xorg.xresources
+  - meta.xorg-nodm
   - system.pulseaudio
+  - system.bluetooth
   - display.display-manager.sddm
   - display.display-manager.sddm.theme.epita
-  - display.wm.i3

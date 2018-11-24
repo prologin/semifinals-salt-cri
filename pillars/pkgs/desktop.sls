@@ -3,6 +3,12 @@ pkgs:
   - pulseaudio
   - pavucontrol
   - paprefs
+  - pulseaudio-bluetooth
+
+  # bluetooth
+  - bluez
+  - bluez-utils
+  - bluez-tools
 
   # browsers
   - firefox
