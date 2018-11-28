@@ -5,3 +5,4 @@ pkgs:
   - mono-tools
   - msbuild-stable
   - rider
+  - gource
