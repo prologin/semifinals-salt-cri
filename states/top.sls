@@ -12,6 +12,7 @@ base:
     - network.dns.static_resolv_conf
     - network.nswrappers
     - display.wm.xfce
+    - dev.tcpdump
 
   'hadoop-archlinux-*':
     - meta.pie
