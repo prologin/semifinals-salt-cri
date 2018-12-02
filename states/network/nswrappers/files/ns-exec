@@ -1,0 +1,8 @@
+#!/bin/sh
+
+USER=${SUDO_USER:-${USER}}
+NS=${1}
+shift
+
+ip netns exec "${NS}" capsh --caps="cap_net_admin,cap_net_raw+eip cap_setpcap,cap_setuid,cap_setgid+ep" \
+  --keep=1 --user="${USER}" --addamb="cap_net_admin,cap_net_raw" -- -c "$*"

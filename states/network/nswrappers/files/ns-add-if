@@ -1,0 +1,12 @@
+#!/bin/sh
+
+IFN=${1}
+NS1=${2}
+NS2=${3}
+
+ip link add "${IFN}-1-${NS1}" type veth peer name "${IFN}-2-${NS2}"
+ip link set dev "${IFN}-1-${NS1}" netns "${NS1}" up
+ip link set dev "${IFN}-2-${NS2}" netns "${NS2}" up
+
+ip netns exec "${NS1}" ethtool -K "${IFN}-1-${NS1}" tx off > /dev/null
+ip netns exec "${NS2}" ethtool -K "${IFN}-2-${NS2}" tx off > /dev/null

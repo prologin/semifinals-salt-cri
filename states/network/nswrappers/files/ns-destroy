@@ -1,0 +1,5 @@
+#!/bin/sh
+
+NS=${1}
+
+ip netns delete "${NS}"

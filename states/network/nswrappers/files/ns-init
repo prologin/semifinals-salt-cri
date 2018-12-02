@@ -1,0 +1,9 @@
+#!/bin/sh
+
+NS=${1}
+
+# Cleanup
+ip netns delete "${NS}" &> /dev/null
+
+# Create the network namespace from which the switch will be run
+ip netns add "${NS}"

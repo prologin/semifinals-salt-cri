@@ -10,6 +10,7 @@ base:
     - meta.pie
     - meta.xorg
     - network.dns.static_resolv_conf
+    - network.nswrappers
     - display.wm.xfce
 
   'hadoop-archlinux-*':
