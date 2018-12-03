@@ -1,9 +1,22 @@
 #!/bin/sh
 
-NS=${1}
+usage() {
+  echo "Usage: $0 NAME1 [NAME2...]"
+}
 
-# Cleanup
-ip netns delete "${NS}" &> /dev/null
+if [[ $EUID -ne 0 ]]; then
+   echo "This command need to be run as root."
+   exit 1
+fi
 
-# Create the network namespace from which the switch will be run
-ip netns add "${NS}"
+if [[ $# -eq 0 ]]; then
+	usage
+	exit 1
+fi
+
+for ns in "$@"; do
+	# Cleanup
+	ip netns delete "${ns}" &> /dev/null
+
+	ip netns add "${ns}" && echo "namespace '${ns}' created."
+done
