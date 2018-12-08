@@ -16,6 +16,7 @@ base:
     - pkgs.pie-archlinux
     - pkgs.vcsn
     - pkgs.xorg
+    - pkgs.dev-torrent
 
   'hadoop-archlinux-*':
     - main.hadoop-archlinux
