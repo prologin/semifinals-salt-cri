@@ -25,7 +25,7 @@ system-pip:
         - {{ pkg }}
       {% endfor %}
     - require:
-      - pkg: system-pip
+      - pkg: system-install-pip
 {% endif %}
 
 {% if pillar.get('pkgs') %}
