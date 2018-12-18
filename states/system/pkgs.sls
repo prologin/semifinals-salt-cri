@@ -17,6 +17,8 @@ system-install-pip:
   pkg.installed:
     - pkgs:
       - python-pip
+    - require:
+      - system-repository-conf¬
 
 system-pip:
   pip.installed:
@@ -24,6 +26,7 @@ system-pip:
       {%- for pkg in pillar.get('pip', {}) %}
         - {{ pkg }}
       {% endfor %}
+    - bin_env: /usr/bin/pip
     - require:
       - pkg: system-install-pip
 {% endif %}
