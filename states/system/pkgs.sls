@@ -17,16 +17,15 @@ system-install-pip:
   pkg.installed:
     - pkgs:
       - python-pip
+{% endif %}
 
+{%- for pkg in pillar.get('pip', {}) %}
 system-pip:
   pip.installed:
-    - name:
-      {%- for pkg in pillar.get('pip', {}) %}
-        - {{ pkg }}
-      {% endfor %}
+    - name: {{ pkg }}
     - require:
       - pkg: system-pip
-{% endif %}
+{% endfor %}
 
 {% if pillar.get('pkgs') %}
 system-pkgs:
