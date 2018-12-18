@@ -18,10 +18,10 @@ system-install-pip:
     - pkgs:
       - python-pip
 
-{%- for pkg in pillar.get('pip', {}) %}
 system-pip:
   pip.installed:
     - pkgs:
+      {%- for pkg in pillar.get('pip', {}) %}
         - {{ pkg }}
       {% endfor %}
     - require:
