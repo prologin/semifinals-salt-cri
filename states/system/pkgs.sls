@@ -12,6 +12,22 @@ system-pkgs-cri:
       - system-pkgs
 {% endif %}
 
+{% if pillar.get('pip') %}
+system-install-pip:
+  pkg.installed:
+    - pkgs:
+      - python-pip
+
+system-pip:
+  pip.installed:
+    - name:
+      {%- for pkg in pillar.get('pip', {}) %}
+        - {{ pkg }}
+      {% endfor %}
+    - require:
+      - pkg: system-pip
+{% endif %}
+
 {% if pillar.get('pkgs') %}
 system-pkgs:
   pkg.installed:
