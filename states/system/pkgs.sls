@@ -18,7 +18,7 @@ system-install-pip:
     - pkgs:
       - python-pip
     - require:
-      - system-repository-conf¬
+      - system-repository-conf
 
 system-pip:
   pip.installed:
