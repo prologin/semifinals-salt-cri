@@ -13,7 +13,6 @@ base:
     - pkgs.dev-ruby
     - pkgs.dev-sdl
     - pkgs.misc
-    - pkgs.net-exam
     - pkgs.pie-archlinux
     - pkgs.vcsn
     - pkgs.xorg
