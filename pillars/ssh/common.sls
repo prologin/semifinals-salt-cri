@@ -17,7 +17,16 @@ openssh:
         present: True
         enc: ssh-rsa
         name: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC17pnCLEvu1QCkOfl+0wsFvY/IlNtV78cYmS2Ei2R6Py1aRT1rRzdR6eBaLVL0zayhH9Nu5CWzsd/u+ag3m+S+MHHF0sBoXJZKo/gV/L4hc8mEbS7QLD1IoMX7wHGB1g5nVPXLAwenwH8wGavfD+N4yj4MtG+5ThBXi72CEQ722/BpEOU+u4BilxFtN72bc6dZHrx/ekDDD638fcTykzPMPXUAIqq4NrFTYSU+NwRyrkSAQld4u9cJc9FWgPO1kqYOpVMfYh9YqkajTaKRLcYDceGWJ8xz7dJ1bRhGLNJb7np4pKBxnMl2LVjzUGnx2Ns1dIhbFo0FK6KYqQp7o0oBhyHNNESkkzhUuB2zYNDTWy7yBjmfYWhG2Ckk4zllL4+r129KSg6B4xxbkKCExVqv9pWRKCbklHLHiGw9mvMoZbRNDvWU5cARURo4rxrHN67bubTa/L0Y3O8JTLtyVCE4y8Hk4yIpyemu7z3hbBy0KTWKsSc2cJq6f4hrNr1Qp1O6aUA3NQheabIRXaKlSt38uVUGBj/79VXXcHON8gd1yUpqP/iGN064DMh5RaOWyNPBaHm2WrQKfvim2TH8RZgVn++6qCwwgo8jMXLAl2SLear3fUvrSbs7JfhT7yiF1V/8plY/bvJuDd0OkJBjrgm+43/hVmI6EiFIghMsQMcREw== jordan@jordan"
-
+    cyril_key:
+      - user: root
+        present: True
+        enc: ssh-rsa
+        name: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDDft/wf2SSfqk7z1oUUsbargNVtjreKhVicY/PV/t1kYXqx68gQLM/KAkLYIkyXJ1z8rj1Hq3MQnnKyvmNQSXPt3RxpntLolU3iBVUvm3/S3vvCVdr5EbIihqdfLXSPYM/zjQCGKBrH6gZe5faH95GfN9ekruZWA2zbzH4V0P4R8oxkSWmkXKeyxZYYLsirI9nlVbFSD2nrAyGU+xpg3zofUt/3a8mOzRCknjYfkpNkjAlGp5/H9dPgBbcBxdcbyrVMxrXTep0eyundhxzFFd+kK+1ISu4NhKU6a9zT/FT1qh34JvuZGiLVixYwxgn0Ey5h0SaBBHVilN+BSF0k3FD3gooKHX6DD7RJoVVXo5pVZ4NBFOJ5fV/RfKwOD2usKQpLERnBCkhBGjeaPV5VOpUrNiRshhDt6dsX8+5K4M7HjTCGci/5M2ZPojFD1sKz91DYyYHHlNZHmMktczltLWt9iDk2ZQOo106+zKDZOlqFPDSDm5b54QZkjjw4/cbvWgeK5X06LX8/rTfF+xGizoyUiEfk6eNA5t0CSbgXUZoUYhOkyUAjI9xypqU2oveA48Nkjmato0TUp2zO+/aBYeiwCMwycXCCJUjmgfAqrmuXmi/NOtVrIwd0ZDadXETVbS3yGuqerz8RBKfOyo2u0NlF9d3oeE2wi3uUwN/3vq1pQ== cyril@cri.epita.net"
+    juliette_localhost_key:
+      - user: root
+        present: True
+        enc: ssh-rsa
+        name: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDOweB2iFHpQB4zn3KttThB3VVifG9ksJ2HODcWTJ0L2zrUVx4Lboo/3x0CEHdksBlTwMhxqo/kti6/oEuP050acRox0dOoBAuaingYcdZ7mgcrkjemoxWWJWCUnmTCryoj0tY00xNJCwsfL1LAZjMeoGe5RYME0QLoH4GkmbHkCp4EKZXHOgErSI4+huiKVabc316/T0jGgxAkQX38id2MqZkB8l6y4hjq48tqFIULi2NXveWcYbPLI7vopQfrnoGIxbPLA3wPRqrS18cNxJBd7cDavIvUhNzaWfzSIXAx89b/qkg656wKX5ZVcWFPpyDR6z3ON6WxV16FR+ZOQQtGAqrpFW5vNpe29fjSDjkXG7hAZ7Gr8gRA9IPPa6kbgrbDucwkHPJItU700ETM4OzU3kuhX6kJ40AT/aze+ylpFCmz5laZb3k4ZI5sd0QACuuU8NlQJ91bo6NY/jvuSU+TbjBIGMs8rpJXbmDHFqncbWk8/CxKP1iWW7Zs26Ap2XDFlcJbWZY6SQH+VIL5zq0jp1kWjSz3TTcQI9Ul3xciN62Pso8lSUSbJN7RXfnn23DMv0/4qZcF39qCtUJ3wJnhHo2PPVTm/Lt8dahQb9pppXVKYZGhkG9NZCMSK4b8PA4BTaTZDor2EDjq1F29ktXkcjIrSfOc+/DBSKN7cr2nQw== juliette@localhost"
     mathis_cri_desktop_key:
       - user: root
         present: True
