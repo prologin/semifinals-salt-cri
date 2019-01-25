@@ -1,15 +1,15 @@
 pkgs:
-  - virt-viewer
-  - virt-manager
+  - arch-install-scripts
   - bc
-  - python-sphinx
+  - bridge-utils
+  - debootstrap
+  - dmidecode
   - dnsmasq
   - ebtables
   - openbsd-netcat
-  - dmidecode
   - pm-utils
-  - debootstrap
-  - arch-install-scripts
-  - rp++
+  - python-sphinx
   - ropgadget
-  - bridge-utils
+  - rp++
+  - virt-manager
+  - virt-viewer

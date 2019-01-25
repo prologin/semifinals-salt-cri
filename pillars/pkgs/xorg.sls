@@ -1,21 +1,19 @@
 pkgs:
-  - xorg-server
-  - xorg-xinit
+  - lib32-libx11
+  - ttf-dejavu
+  - ttf-liberation
   - xf86-input-evdev
   - xf86-input-libinput
   - xf86-video-intel
-  - xsel
-  - ttf-dejavu
-  - ttf-liberation
-  - xterm
-  - lib32-libx11
   - xorg-iceauth
+  - xorg-server
   - xorg-sessreg
   - xorg-setxkbmap
   - xorg-xbacklight
   - xorg-xcmsdb
   - xorg-xgamma
   - xorg-xhost
+  - xorg-xinit
   - xorg-xinput
   - xorg-xmodmap
   - xorg-xrandr
@@ -23,3 +21,5 @@ pkgs:
   - xorg-xrefresh
   - xorg-xset
   - xorg-xsetroot
+  - xsel
+  - xterm

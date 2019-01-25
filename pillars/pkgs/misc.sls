@@ -1,6 +1,6 @@
 pkgs:
-  - sfml
-  - csfml
-  - texlive-fontsextra
-  - tensorflow
+   csfml
   - python-tensorflow
+  - sfml
+  - tensorflow
+  - texlive-fontsextra

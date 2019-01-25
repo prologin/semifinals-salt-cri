@@ -9,11 +9,9 @@ base:
     - pkgs.cd68k
     - pkgs.desktop
     - pkgs.dev
-    - pkgs.dev-iso
     - pkgs.dev-ruby
     - pkgs.dev-rust
     - pkgs.dev-sdl
-    - pkgs.dev-torrent
     - pkgs.misc
     - pkgs.pie-archlinux
     - pkgs.vcsn
@@ -21,6 +19,7 @@ base:
 
   'hadoop-archlinux-*':
     - main.hadoop-archlinux
+    - dev.spark.spark-1-6-3
     - pkgs.cd68k
     - pkgs.desktop
     - pkgs.dev
@@ -30,17 +29,16 @@ base:
     - pkgs.pie-archlinux
     - pkgs.xorg
     - ssh.hadoop
-    - dev.spark.spark-1-6-3
 
   'sup-archlinux-*':
     - main.sup-archlinux
-    - pkgs.sup-archlinux
-    - pkgs.xorg
     - pkgs.desktop
     - pkgs.dev
     - pkgs.doc
-    - pkgs.ocaml
     - pkgs.misc
+    - pkgs.ocaml
+    - pkgs.sup-archlinux
+    - pkgs.xorg
 
   'browser-archlinux-*':
     - main.browser-archlinux
@@ -56,20 +54,19 @@ base:
 
   'fioi-archlinux-*':
     - main.fioi
-    - pkgs.fioi
-    - pkgs.misc
-    - pkgs.xorg
+    - pkgs.archlinux
     - pkgs.desktop
     - pkgs.dev
     - pkgs.dev-sdl
-    - pkgs.archlinux
+    - pkgs.fioi
+    - pkgs.misc
     - pkgs.ocaml
+    - pkgs.xorg
 
   'cri-archlinux-*':
     - main.cri-archlinux
-    - pkgs.cri-archlinux
-    - pkgs.xorg
     - pkgs.cd68k
+    - pkgs.cri-archlinux
     - pkgs.desktop
     - pkgs.dev
     - pkgs.dev-iso
@@ -77,12 +74,13 @@ base:
     - pkgs.dev-sdl
     - pkgs.dev-torrent
     - pkgs.vcsn
+    - pkgs.xorg
 
   'gpgpu-archlinux-*':
     - main.gpgpu-archlinux
-    - pkgs.pie-archlinux
-    - pkgs.gpgpu
-    - pkgs.misc
-    - pkgs.xorg
     - pkgs.desktop
     - pkgs.dev
+    - pkgs.gpgpu
+    - pkgs.misc
+    - pkgs.pie-archlinux
+    - pkgs.xorg

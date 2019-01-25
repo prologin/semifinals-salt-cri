@@ -1,4 +1,4 @@
 pkgs:
   - benchmark
-  - intel-tbb
   - gtest
+  - intel-tbb

@@ -3,6 +3,5 @@ pkgs:
   - gtkspell
   - mono
   - mono-tools
-  - vde2
   - qemu
-
+  - vde2

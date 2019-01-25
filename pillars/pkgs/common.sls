@@ -1,6 +1,9 @@
 pkgs:
   - git
   - htop
+  - iproute2
+  - lsof
+  - man-pages
   - openssh
   - python
   - python-pip
@@ -8,13 +11,10 @@ pkgs:
   - rsync
   - screen
   - sudo
+  - systemd-sysvcompat
   - tcpdump
   - tmux
   - tree
   - unzip
   - wget
   - zip
-  - iproute2
-  - man-pages
-  - lsof
-  - systemd-sysvcompat
