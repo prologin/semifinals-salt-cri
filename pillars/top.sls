@@ -11,12 +11,13 @@ base:
     - pkgs.dev
     - pkgs.dev-iso
     - pkgs.dev-ruby
+    - pkgs.dev-rust
     - pkgs.dev-sdl
+    - pkgs.dev-torrent
     - pkgs.misc
     - pkgs.pie-archlinux
     - pkgs.vcsn
     - pkgs.xorg
-    - pkgs.dev-torrent
 
   'hadoop-archlinux-*':
     - main.hadoop-archlinux
