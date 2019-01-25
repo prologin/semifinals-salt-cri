@@ -1,5 +1,5 @@
 pkgs:
-   csfml
+  - csfml
   - python-tensorflow
   - sfml
   - tensorflow
