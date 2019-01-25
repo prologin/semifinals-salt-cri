@@ -1,3 +1,2 @@
 pkgs:
-  - rust
   - rustup
