@@ -4,7 +4,7 @@ network-afs-install-openafs:
       - openafs
       - openafs-modules-dkms
     - require:
-      - system-repository-conf
+      - cmd: system-repository-conf
 
 network-afs-enable-openafs:
   service.running:

@@ -3,7 +3,6 @@ system-install-logind-watch-sessions-package:
     - pkgs:
       - python-logind-watch-sessions
     - require:
-      - file: system-repository-conf
       - cmd: system-repository-conf
 
 enable-service-logind-watch-api:

@@ -1,7 +1,7 @@
 system-gen-locale:
   file.managed:
     - name: /etc/locale.gen
-    - contents: en_US.UTF-8 UTF-8
+    - contents: {{ pillar.get("locales", ["en_US.UTF-8 UTF-8"]) }}
   cmd.run:
     - name: locale-gen
     - runas: root
@@ -11,8 +11,7 @@ system-gen-locale:
 system-conf-locale:
   file.managed:
     - name: /etc/locale.conf
-    - source: salt://system/files/locale.conf
-
+    - contents: {{ pillar.get("locale_conf", ["LANG=en_US.UTF-8"]) }}
 
 #system-locale-us:
 #  locale.present:

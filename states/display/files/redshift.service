@@ -1,0 +1,10 @@
+[Unit]
+Description=Redshift
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/redshift -l 0:0 -m randr -t 3700:3700
+Environment="DISPLAY=:0" "XAUTHORITY=%h/.Xauthority"
+
+[Install]
+WantedBy=default.target

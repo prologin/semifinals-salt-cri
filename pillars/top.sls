@@ -2,6 +2,7 @@ base:
   '*':
     - main.common
     - ssh.common
+    - repos.common
     - pkgs.common
 
   'pie-archlinux-*':
@@ -27,6 +28,18 @@ base:
     - pkgs.misc
     - pkgs.sup-archlinux
     - pkgs.ji-archlinux
+
+  'gcc-archlinux-*':
+    - lang.fr
+    - ssh.gcc-archlinux
+    - main.gcc-archlinux
+    - repos.prologin
+    - udev.microbit
+    - pkgs.browser-archlinux
+    - pkgs.xorg
+    - pkgs.kde
+    - pkgs.games
+    - pkgs.gcc-archlinux
 
   'hadoop-archlinux-*':
     - main.hadoop-archlinux

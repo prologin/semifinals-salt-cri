@@ -24,6 +24,16 @@ base:
     - network.dns.static_resolv_conf
     - display.wm.xfce
 
+  'gcc-archlinux-*':
+    - display.redshift
+    - gcc.bashrc
+    - gcc.aventure
+    - gcc.listes_tests
+    - meta.pie
+    - meta.xorg
+    - network.dns.static_resolv_conf
+    - display.wm.xfce
+
   'hadoop-archlinux-*':
     - meta.pie
     - meta.xorg

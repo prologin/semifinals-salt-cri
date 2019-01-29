@@ -1,6 +1,7 @@
 include:
   - system.locale
   - system.repos
+  - system.udev
   - system.pkgs
   - system.ruby-gems
   - system.aria2

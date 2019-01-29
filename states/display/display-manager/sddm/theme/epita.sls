@@ -6,7 +6,6 @@ display-display-manager-sddm-theme-epita-install:
     - name: epita-themes-sddm
     - require:
       - pkg: display-display-manager-sddm-install
-      - file: system-repository-conf
       - cmd: system-repository-conf
 
 display-display-manager-sddm-theme-epita-configure:

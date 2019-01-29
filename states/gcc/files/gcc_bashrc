@@ -1,0 +1,20 @@
+[[ $- != *i* ]] && return
+
+export LANG=fr_FR.utf8
+
+export EDITOR=gedit
+
+alias ls='ls --color=auto'
+PS1='[\u@\h \W]\$ '
+
+source /etc/aventure.sh
+
+
+mon_adresse() {
+	echo http://"$(ip -j r | python -c '
+import json;
+import sys;
+print(list(filter(lambda e: e["dst"] == "default",
+                  json.loads(sys.stdin.read())))[0]["prefsrc"])')":5000/
+
+}
