@@ -54,7 +54,7 @@ base:
 
   'fioi-archlinux-*':
     - main.fioi
-    - pkgs.archlinux
+    - pkgs.pie-archlinux
     - pkgs.desktop
     - pkgs.dev
     - pkgs.dev-sdl
