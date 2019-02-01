@@ -7,7 +7,7 @@ dev-spark-download-spark:
   file.managed:
     - name: /tmp/spark.tgz
     - source: {{ pillar.get('spark_url') }}
-    - source_hash: {{ pillar.get('spark_hash') }}
+    - skip_verify: True
 
 dev-spark-extract-spark:
   archive.extracted:
