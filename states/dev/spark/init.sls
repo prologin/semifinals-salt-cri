@@ -1,4 +1,4 @@
-dev-spark-toree-install-pip:
+dev-spark-install-pip:
   pkg.installed:
     - pkgs:
       - scala
