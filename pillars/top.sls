@@ -16,7 +16,6 @@ base:
     - pkgs.dev-tc
     - pkgs.misc
     - pkgs.pie-archlinux
-    - pkgs.vcsn
     - pkgs.xorg
 
   'hadoop-archlinux-*':
