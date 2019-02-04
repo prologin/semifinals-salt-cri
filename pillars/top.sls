@@ -12,6 +12,8 @@ base:
     - pkgs.dev-ruby
     - pkgs.dev-rust
     - pkgs.dev-sdl
+    - pkgs.dev-spider
+    - pkgs.dev-tc
     - pkgs.misc
     - pkgs.pie-archlinux
     - pkgs.vcsn
