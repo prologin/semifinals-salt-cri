@@ -13,6 +13,7 @@ base:
     - network.nswrappers
     - display.wm.xfce
     - dev.tcpdump
+    - dev.tc
 
   'hadoop-archlinux-*':
     - meta.pie

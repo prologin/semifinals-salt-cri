@@ -5,3 +5,4 @@ pkgs:
   - llvm
   - python-yaml
   - lib32-gcc-libs
+  - bison-epita
