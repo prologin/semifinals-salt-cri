@@ -85,3 +85,13 @@ base:
     - pkgs.misc
     - pkgs.pie-archlinux
     - pkgs.xorg
+
+  'ricou-archlinux-*':
+    - main.ricou-archlinux
+    - pkgs.desktop
+    - pkgs.dev
+    - pkgs.dev-ruby
+    - pkgs.misc
+    - pkgs.pie-archlinux
+    - pkgs.python-bigdata
+    - pkgs.xorg

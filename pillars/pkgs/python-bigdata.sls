@@ -1,0 +1,38 @@
+pkgs:
+  - ffmpeg
+  - imagemagick
+  - lapack
+  - lapacke
+  - libxml2
+  - libxslt
+  - python
+  - python-ipykernel
+  - python-matplotlib
+  - python-pip
+  - python-setuptools
+  - wget
+  - x264
+  - zeromq
+  - zlib
+
+pip:
+  - 'jupyter'
+  - 'jupyter_latex_envs'
+  - 'jupyter_contrib_nbextensions'
+  - 'git+https://github.com/devrt/nbtranslate.git'
+  - 'ipython'
+  - 'numpy >= 1.14.5'
+  - 'scipy >= 1.0.1'
+  - 'pandas >= 0.23.3'
+  - 'git+https://github.com/pydata/pandas-datareader'
+  - 'seaborn >= 0.8.1'
+  - 'plotly == 2.7.0'
+  - 'cufflinks == 0.13.0'
+  - beautifulsoup4
+  - lxml
+  - openpyxl
+  - xlrd
+  - folium
+  - ipywidgets
+  - imageio
+  - quandl

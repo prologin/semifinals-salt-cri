@@ -6,4 +6,4 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-exec docker run -v /tmp/pbg:/pbg -p 127.0.0.1:8888:8888 registry.lrde.epita.fr/mooc-pysci3
+exec docker run -v /tmp/pbg:/home/toto/notebooks -p 127.0.0.1:8888:8888 registry.lrde.epita.fr/mooc-pysci3

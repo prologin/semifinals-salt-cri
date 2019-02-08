@@ -58,3 +58,9 @@ base:
     - meta.pie
     - meta.xorg
     - display.wm.xfce
+
+  'ricou-archlinux-*':
+    - meta.pie
+    - meta.xorg
+    - network.dns.static_resolv_conf
+    - display.wm.xfce
