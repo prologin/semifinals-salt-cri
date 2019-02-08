@@ -11,6 +11,9 @@ sudoers:
         - /usr/local/bin/ns-exec
         - /usr/local/bin/ns-del-if
         - /usr/local/bin/ns-destroy
+      PYTHONBIGDATA:
+        - /usr/local/bin/pbg-run
   users:
     ALL:
       - 'ALL=NOPASSWD: NSWRAPPERS'
+      - 'ALL=NOPASSWD: PYTHONBIGDATA'

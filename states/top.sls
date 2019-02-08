@@ -11,6 +11,8 @@ base:
     - meta.xorg
     - network.dns.static_resolv_conf
     - network.nswrappers
+    - system.docker
+    - misc.docker-bigdata
     - display.wm.xfce
     - dev.tcpdump
     - dev.tc
