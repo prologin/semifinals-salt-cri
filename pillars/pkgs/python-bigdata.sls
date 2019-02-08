@@ -10,6 +10,8 @@ pkgs:
   - python-matplotlib
   - python-pip
   - python-setuptools
+  - python2-pip
+  - python2-setuptools
   - wget
   - x264
   - zeromq
