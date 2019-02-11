@@ -13,22 +13,31 @@ system-pkgs-cri:
 {% endif %}
 
 {% if pillar.get('pip') %}
-system-install-pip:
+system-pkgs-install-pip:
   pkg.installed:
     - pkgs:
       - python-pip
     - require:
       - system-repository-conf
 
-system-pip:
-  pip.installed:
-    - pkgs:
-      {%- for pkg in pillar.get('pip', {}) %}
-        - {{ pkg }}
-      {% endfor %}
-    - bin_env: /usr/bin/pip
+system-pkgs-pip-requirements:
+  file.managed:
+    - name: /var/lib/misc/requirements.txt
+    - mode: 644
+    - makedirs: True
+    - contents_pillar: pip
+    - contents_newline: True
+
+system-pkgs-pip:
+  cmd.run:
+    - name: /usr/bin/pip install -r /var/lib/misc/requirements.txt
+    - runas: root
+    - reload_modules: True
     - require:
       - pkg: system-install-pip
+    - onchanges:
+      - file: system-pkgs-pip-requirements
+
 {% endif %}
 
 {% if pillar.get('pkgs') %}
