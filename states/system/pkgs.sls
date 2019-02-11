@@ -34,7 +34,7 @@ system-pkgs-pip:
     - runas: root
     - reload_modules: True
     - require:
-      - pkg: system-install-pip
+      - pkg: system-pkgs-install-pip
     - onchanges:
       - file: system-pkgs-pip-requirements
 
