@@ -17,6 +17,7 @@ system-pkgs-install-pip:
   pkg.installed:
     - pkgs:
       - python-pip
+      - git
     - require:
       - system-repository-conf
 
