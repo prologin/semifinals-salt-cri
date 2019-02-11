@@ -12,6 +12,27 @@ system-pkgs-cri:
       - system-pkgs
 {% endif %}
 
+{% if pillar.get('pkgs') %}
+system-pkgs:
+  pkg.installed:
+    - pkgs:
+      {%- for pkg in pillar.get('pkgs', {}) %}
+        - {{ pkg }}
+      {% endfor %}
+    - require:
+      - system-repository-conf
+{% endif %}
+
+system-pkgs-vim:
+  pkg.installed:
+{% if salt['pillar.get']('vim-graphic', False) %}
+    - name: gvim
+{% else %}
+    - name: vim
+{% endif %}
+    - require:
+      - system-repository-conf
+
 {% if pillar.get('pip') %}
 system-pkgs-install-pip:
   pkg.installed:
@@ -41,23 +62,3 @@ system-pkgs-pip:
 
 {% endif %}
 
-{% if pillar.get('pkgs') %}
-system-pkgs:
-  pkg.installed:
-    - pkgs:
-      {%- for pkg in pillar.get('pkgs', {}) %}
-        - {{ pkg }}
-      {% endfor %}
-    - require:
-      - system-repository-conf
-{% endif %}
-
-system-pkgs-vim:
-  pkg.installed:
-{% if salt['pillar.get']('vim-graphic', False) %}
-    - name: gvim
-{% else %}
-    - name: vim
-{% endif %}
-    - require:
-      - system-repository-conf
