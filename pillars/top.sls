@@ -14,6 +14,7 @@ base:
     - pkgs.dev-sdl
     - pkgs.dev-spider
     - pkgs.dev-tc
+    - pkgs.k
     - pkgs.misc
     - pkgs.pie-archlinux
     - pkgs.xorg

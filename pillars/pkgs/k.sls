@@ -1,6 +1,6 @@
 pkgs:
-  - qemu
-  - qemu-arch-extra
   - grub
   - libisoburn
   - mtools
+  - qemu
+  - qemu-arch-extra
