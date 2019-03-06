@@ -30,6 +30,15 @@ salt-minion-configure-pillar-environment:
     - watch_in:
       - service: salt-minion-enable
 
+salt-minion-configure-systemd-scope-true:
+  file.replace:
+    - name: /etc/salt/minion
+    - pattern: "^systemd.scope:.*$"
+    - repl: "systemd.scope: True"
+    - append_if_not_found: True
+    - watch_in:
+      - service: salt-minion-enable
+
 salt-minion-configure-wrapper:
   file.managed:
     - name: /usr/local/bin/salt-minion_wrapper
