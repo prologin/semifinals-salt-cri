@@ -18,6 +18,15 @@ base:
     - pkgs.pie-archlinux
     - pkgs.xorg
 
+  'ji-archlinux-*':
+    - main.ji-archlinux
+    - pkgs.desktop
+    - pkgs.dev
+    - pkgs.doc
+    - pkgs.misc
+    - pkgs.sup-archlinux
+    - pkgs.ji-archlinux
+
   'hadoop-archlinux-*':
     - main.hadoop-archlinux
     - dev.spark.spark-1-6-3

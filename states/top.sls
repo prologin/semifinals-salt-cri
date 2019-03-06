@@ -17,6 +17,13 @@ base:
     - dev.tcpdump
     - dev.tc
 
+  'ji-archlinux-*':
+    - match: glob
+    - meta.pie
+    - meta.xorg
+    - network.dns.static_resolv_conf
+    - display.wm.xfce
+
   'hadoop-archlinux-*':
     - meta.pie
     - meta.xorg
