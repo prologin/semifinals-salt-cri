@@ -7,6 +7,7 @@ pkgs:
   - openssh
   - python
   - python-pip
+  - python-pipenv
   - python-virtualenv
   - rsync
   - screen
