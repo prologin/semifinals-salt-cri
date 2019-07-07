@@ -6,6 +6,6 @@ salt-minion-configure-systemd-scope-false:
     - append_if_not_found: True
     - watch_in:
       - service: salt-minion-enable
-    - exclude:
-      - id: salt-minion-configure-systemd-scope-true
+#   - exclude:
+#     - id: salt-minion-configure-systemd-scope-true
 

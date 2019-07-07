@@ -15,9 +15,7 @@ include:
   - system.mandb
   - system.timezone
   - users
-  - users.user_files
   - system.users.empty_password_workaround
   - openssh
   - openssh.auth
   - openssh.config
-  - sudoers
