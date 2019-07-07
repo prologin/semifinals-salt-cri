@@ -37,6 +37,7 @@ base:
     - udev.microbit
     - pkgs.browser-archlinux
     - pkgs.xorg
+    - pkgs.desktop
     - pkgs.kde
     - pkgs.games
     - pkgs.gcc-archlinux
