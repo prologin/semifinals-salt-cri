@@ -4,4 +4,4 @@ pkgs:
   - mktorrent
   - openssl
   - opentracker
-  - wireshark-gtk
+  - wireshark-qt
