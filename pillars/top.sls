@@ -31,7 +31,7 @@ base:
 
   'gcc-archlinux-*':
     - lang.fr
-    - ssh.gcc-archlinux
+    - ssh.prologin
     - main.gcc-archlinux
     - repos.prologin
     - udev.microbit
