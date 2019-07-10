@@ -12,6 +12,10 @@ pkgs:
   - mu-editor
   - python-flask
 
+# important packages
+  - redshift
+  - teeworlds
+
   - nautilus
   - evince
 
