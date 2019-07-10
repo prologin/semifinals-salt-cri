@@ -2,7 +2,6 @@ base:
   '*':
     - main.common
     - ssh.common
-    - repos.common
     - pkgs.common
 
   'pie-archlinux-*':
