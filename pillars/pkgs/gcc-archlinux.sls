@@ -30,7 +30,6 @@ pkgs:
   # editors
   - gedit
   - emacs
-  - sublime-text-dev
 
   # images
   - gimp
