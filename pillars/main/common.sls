@@ -11,6 +11,8 @@ users:
   root:
     password: $6$09rXqOQDJ.A$EWFhzmFO3jPGsqlFgjD.fug7oX.wXwzSwC.rUSb5deMUJMD0ovzmZBdRjkXriIQkIdRzXcTwG6xXnswKRR8Jj1
     shell: /bin/bash
+    home: /root
+    createhome: True
     user_files:
       enabled: True
       source: salt://files/default/home/root
