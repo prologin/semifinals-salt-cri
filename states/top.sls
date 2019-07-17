@@ -31,6 +31,7 @@ base:
     - meta.pie
     - meta.xorg
     - network.dns.gcc_static_resolv_conf
+    - network.dhcp
     - display.wm.xfce
 
   'hadoop-archlinux-*':
