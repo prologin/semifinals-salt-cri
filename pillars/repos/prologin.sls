@@ -2,4 +2,4 @@ repos:
   20-prologin:
     - "[prologin]"
     - "SigLevel = Never"
-    - "Server = https://repo.prologin.org/
+    - "Server = https://repo.prologin.org/"
