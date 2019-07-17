@@ -30,7 +30,7 @@ base:
     - gcc.listes_tests
     - meta.pie
     - meta.xorg
-    - network.dns.static_resolv_conf
+    - network.dns.gcc_static_resolv_conf
     - display.wm.xfce
 
   'hadoop-archlinux-*':
