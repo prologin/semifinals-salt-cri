@@ -11,7 +11,7 @@ def test(f, inp, out):
         if res == out:
             print("\033[0;32m [OK] \033[0m")
         else:
-            print(f"expected {out} \033[0;31m [KO]\033[0m")
+            print(f"| Attendu: {out} \033[0;31m [KO]\033[0m")
     except Exception as e:
         print(e, "\033[0;31m [K0] \033[0m")
 
@@ -100,14 +100,40 @@ except Exception as e:
 print()
 
 try:
-    test(tp.fibo, [0], 1)
+    test(tp.count, ['c', "girls can code"], 2)
+    test(tp.count, ['r', "girls can code"], 1)
+    test(tp.count, ['w', "girls can code"], 0)
+except Exception as e:
+    print(e)
+
+print()
+
+try:
+    test(tp.trier, [[3, 1, 9, 5, 2]], [1, 2, 3, 5, 9])
+    test(tp.trier, [[]], [])
+    test(tp.trier, [["garance", "paul", "martin", "thibault", "leo"]], ["garance", "leo", "martin", "paul", "thibault"])
+except Exception as e:
+    print(e)
+
+print()
+
+try:
+    test(tp.fibo, [0], 0)
     test(tp.fibo, [1], 1)
-    test(tp.fibo, [2], 2)
-    test(tp.fibo, [3], 3)
-    test(tp.fibo, [4], 5)
-    test(tp.fibo, [5], 8)
-    test(tp.fibo, [6], 13)
-    test(tp.fibo, [7], 21)
+    test(tp.fibo, [2], 1)
+    test(tp.fibo, [3], 2)
+    test(tp.fibo, [4], 3)
+    test(tp.fibo, [5], 5)
+    test(tp.fibo, [6], 8)
+    test(tp.fibo, [7], 13)
+    test(tp.fibo, [8], 21)
+except Exception as e:
+    print(e)
+
+print()
+
+try:
+    tp.tictac(5)
 except Exception as e:
     print(e)
 
