@@ -36,6 +36,7 @@ base:
     - display.wm.xfce
     - system.keyboard
     - system.locale
+    - system.gcc-desktop-env
 
   'hadoop-archlinux-*':
     - meta.pie
