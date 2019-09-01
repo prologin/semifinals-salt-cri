@@ -1,0 +1,4 @@
+# files
+Clone this repo to /srv/salt
+
+The minion and master files go to /etc/salt/
