@@ -30,7 +30,7 @@ base:
     - gcc.listes_tests
     - meta.pie
     - meta.xorg
-    - network.dns.gcc_static_resolv_conf
+    - network.dns
     - network.dhcp
     - display.wm.xfce
 
