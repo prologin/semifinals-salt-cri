@@ -14,7 +14,6 @@ pkgs:
 
 # important packages
   - redshift
-  - teeworlds
 
   - nautilus
   - evince
