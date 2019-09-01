@@ -1,0 +1,29 @@
+file_roots:
+  base:
+    - /srv/salt/states
+
+
+
+fileserver_backend:
+  - roots
+  - git
+
+
+
+gitfs_provider: GitPython
+
+gitfs_remotes:
+  - https://github.com/saltstack-formulas/users-formula.git
+  - https://github.com/saltstack-formulas/openssh-formula.git
+
+
+
+pillar_roots:
+  base:
+    - /srv/salt/pillars
+
+
+
+pillar_source_merging_strategy: recurse
+pillar_merge_lists: True
+systemd.scope: False
