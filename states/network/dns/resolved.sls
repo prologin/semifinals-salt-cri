@@ -8,3 +8,12 @@ network-dns-configure-resolv-conf:
     - name: /etc/resolv.conf
     - target: /usr/lib/systemd/resolv.conf
     - force: True
+
+network-dns-conf:
+    file.managed:
+      - name: /etc/systemd/resolved.conf
+      - contents: |
+          [Resolve]
+          DNS=10.224.4.2 1.1.1.1
+      - watch_in:
+        - service: network-dns-enable-resolved
