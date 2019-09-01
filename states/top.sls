@@ -34,6 +34,7 @@ base:
     - network.dns
     - network.dhcp
     - display.wm.xfce
+    - system.keyboard
 
   'hadoop-archlinux-*':
     - meta.pie
