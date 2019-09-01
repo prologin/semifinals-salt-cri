@@ -28,6 +28,7 @@ base:
     - gcc.bashrc
     - gcc.aventure
     - gcc.listes_tests
+    - gcc.wallpaper
     - meta.pie
     - meta.xorg
     - network.dns
