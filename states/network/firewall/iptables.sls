@@ -6,7 +6,7 @@ network-firewall-enable-iptables:
 network-firewall-configure-iptables:
   file.managed:
     - name: /etc/iptables/iptables.rules
-    - source: {{ pillar['iptables-rules_source'] }}
+    - source: salt://network/firewall/files/iptables.rules
     - watch_in:
       - service: network-firewall-enable-iptables
 
