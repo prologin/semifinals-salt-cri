@@ -2,3 +2,6 @@
 Clone this repo to /srv/salt
 
 The minion and master files go to /etc/salt/
+
+fix for race condition in initramfs when interfaces are put up :
+network hangs happen, fix : `net.ifnames=0` in cmdline kernel
