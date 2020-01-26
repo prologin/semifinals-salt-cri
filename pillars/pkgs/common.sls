@@ -19,3 +19,4 @@ pkgs:
   - unzip
   - wget
   - zip
+  - man-db
