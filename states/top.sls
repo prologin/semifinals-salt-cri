@@ -23,6 +23,19 @@ base:
     - network.dns.static_resolv_conf
     - display.wm.xfce
 
+  'prologin-archlinux-*':
+    - display.redshift
+    - network.dns
+    - network.dhcp
+    - network.firewall
+    - meta.pie
+    - meta.xorg
+    - system.keyboard
+    - system.locale
+    - display.wm.xfce
+    - gcc.wallpaper
+    - system.gcc-desktop-env
+
   'gcc-archlinux-*':
     - display.redshift
     - gcc.bashrc
