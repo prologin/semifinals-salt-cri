@@ -3,7 +3,6 @@ display-wm-xfce-install:
     - pkgs:
       - exo
       - garcon
-      - gtk-xfce-engine
       - thunar
       - thunar-volman
       - tumbler
