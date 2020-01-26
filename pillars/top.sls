@@ -40,6 +40,16 @@ base:
     - pkgs.kde
     - pkgs.gcc-archlinux
 
+  'prologin-archlinux-*':
+    - lang.fr
+    - ssh.gcc-archlinux
+    - main.prologin-archlinux
+    - udev.microbit
+    - pkgs.browser-archlinux
+    - pkgs.xorg
+    - pkgs.desktop
+    - pkgs.prologin-archlinux
+
   'hadoop-archlinux-*':
     - main.hadoop-archlinux
     - dev.spark.spark-1-6-3
