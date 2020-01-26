@@ -1,6 +1,6 @@
 display-wm-i3-i3lock-epita-install:
   pkg.installed:
-    - name: i3lock-epita
+    - name: i3lock-cri
 
 display-wm-i3-i3lock-epita-configure:
   file.managed:
