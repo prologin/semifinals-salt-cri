@@ -11,7 +11,7 @@ pkgs:
   - feh
 
   # misc
-  - i3lock-epita
+  - i3lock-cri
   - mlocate
   - openbsd-netcat
 

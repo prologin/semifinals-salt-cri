@@ -32,7 +32,7 @@ pkgs:
 
   # images
   - gimp
-  - i3lock-epita
+  - i3lock-cri
   - mlocate
   - openbsd-netcat
   - redshift
