@@ -20,7 +20,6 @@ pkgs:
   - irssi
   - msmtp
   - mutt
-  - slrn
   - thunderbird
   - weechat
 
