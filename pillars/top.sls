@@ -43,6 +43,7 @@ base:
   'prologin-archlinux-*':
     - lang.fr
     - ssh.gcc-archlinux
+    - repos.prologin
     - main.prologin-archlinux
     - udev.microbit
     - pkgs.browser-archlinux
