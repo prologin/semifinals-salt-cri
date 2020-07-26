@@ -62,3 +62,4 @@ pkgs:
   - atom
   - rust 
   - man-db
+  - vscode-extensions
