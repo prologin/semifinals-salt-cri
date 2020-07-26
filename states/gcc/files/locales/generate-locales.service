@@ -1,0 +1,9 @@
+[Unit]
+Description=Generate Locales at boot
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/locale-gen
+
+[Install]
+WantedBy=mutli-user.target
