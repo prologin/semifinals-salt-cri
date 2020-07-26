@@ -41,7 +41,6 @@ base:
     - gcc.bashrc
     - gcc.aventure
     - gcc.listes_tests
-    - gcc.wallpaper
     - meta.pie
     - meta.xorg
     - network.dns
@@ -50,6 +49,7 @@ base:
     - system.keyboard
     - system.locale
     - system.gcc-desktop-env
+    - gcc.locale-generation
 
   'hadoop-archlinux-*':
     - meta.pie
