@@ -10,6 +10,7 @@ pkgs:
   - cantarell-fonts
   - mu-editor
   - python-flask
+  - jupyter-notebook
 
 # important packages
   - redshift
