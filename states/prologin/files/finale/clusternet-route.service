@@ -1,0 +1,9 @@
+[Unit]
+Description=Clusternet Route
+After=network-online.target
+
+[Service]
+ExecStart=/usr/bin/ip route add 172.22.42.0/24 via 10.224.34.142
+
+[Install]
+WantedBy=multi-user.target

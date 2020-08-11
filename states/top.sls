@@ -51,6 +51,15 @@ base:
     - system.gcc-desktop-env
     - gcc.locale-generation
 
+  'prologin-finale-*':
+    - network.dns
+    - network.dhcp
+    - meta.pie
+    - meta.xorg
+    - system.keyboard
+    - system.locale
+    - prologin.finale
+
   'hadoop-archlinux-*':
     - meta.pie
     - meta.xorg
