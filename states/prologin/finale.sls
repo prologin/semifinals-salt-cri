@@ -48,10 +48,18 @@ sadm_workernode_config:
   file.managed:
     - name: /etc/prologin/workernode.yml
     - source: salt://prologin/files/finale/workernode.yml
-    - mode: 600
-    - user: finale
+    - mode: 640
+    - user: root
     - group: finale
     - makedirs: True
+
+sadm_timeauth_config:
+  file.managed:
+    - name: /etc/prologin/timeauth.yml
+    - source: salt://prologin/files/finale/timeauth.yml
+    - mode: 644
+    - user: root
+    - group: root
 
 sadm_workernode_systemd:
   file.managed:
@@ -72,3 +80,15 @@ sadm_clusternet_route:
     - group: root
   service.enabled:
     - name: clusternet-route
+
+tmpfs_tmp:
+  mount.mounted:
+    - name: /tmp
+    - device: tmpfs
+    - fstype: tmpfs
+
+tmpfs_isolate:
+  mount.mounted:
+    - name: /var/lib/isolate
+    - device: tmpfs
+    - fstype: tmpfs

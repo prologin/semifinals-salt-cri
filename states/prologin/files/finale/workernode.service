@@ -8,6 +8,7 @@ Type=simple
 User=finale
 Environment=JAVA_HOME=/usr/lib/jvm/default
 ExecStart=/home/finale/sadm/.venv/bin/python -m prologin.workernode
+WorkingDirectory=/home/finale/sadm
 
 [Install]
 WantedBy=multi-user.target
