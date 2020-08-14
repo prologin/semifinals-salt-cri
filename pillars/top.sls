@@ -51,6 +51,12 @@ base:
     - pkgs.desktop
     - pkgs.prologin-archlinux
 
+  'prologin-finale-*':
+    - ssh.prologin-finale
+    - repos.prologin
+    - main.prologin-finale
+    - pkgs.prologin-finale
+
   'hadoop-archlinux-*':
     - main.hadoop-archlinux
     - dev.spark.spark-1-6-3

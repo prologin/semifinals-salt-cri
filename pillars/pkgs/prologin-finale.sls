@@ -1,0 +1,15 @@
+pkgs:
+  - git
+  - htop
+  - tree
+  - ntp
+  - openssh
+  - tmux
+  - wget
+  - vim
+  - rsync
+  - man-db
+  - camisole-languages
+  - camisole-git
+  - stechec2
+  - postgresql-libs

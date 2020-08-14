@@ -54,9 +54,6 @@ base:
   'prologin-finale-*':
     - network.dns
     - network.dhcp
-    - meta.pie
-    - meta.xorg
-    - system.keyboard
     - system.locale
     - prologin.finale
 

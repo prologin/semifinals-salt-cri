@@ -1,0 +1,26 @@
+master:
+    host: 172.16.42.1
+    port: 8067
+    heartbeat_secs: 5             # Must be < to the master timeout.
+    max_retries: 15               # Max retries when the master is down
+    retry_delay: 10               # Delay between each retry
+    shared_secret: "changeme"
+
+worker:
+    port: 8068                    # Port used for RPC communication.
+    available_slots: 20           # Number of parallel tasks that can be
+
+path:
+    stechec_server: /usr/bin/stechec2-server
+    stechec_client: /usr/bin/stechec2-client
+    rules: /usr/lib/libprologin2020_plante.so                    # Stechec's rules library
+    player_env: /usr/share/stechec2/prologin2020_plante/player # Directory containing the player environment
+
+timeout: # timeouts in seconds (double)
+    server: 400
+    client: 400
+
+isolate:
+    time_limit_secs: 350
+    mem_limit_MiB: 500
+    processes: 100

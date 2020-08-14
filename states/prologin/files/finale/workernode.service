@@ -5,12 +5,9 @@ Needs=clusternet.service
 
 [Service]
 Type=simple
-User=cluster
+User=finale
 Environment=JAVA_HOME=/usr/lib/jvm/default
 ExecStart=/home/finale/sadm/.venv/bin/python -m prologin.workernode
-Nice=10
-IOScheduling=idle
-IOSchedulingPriority=7
 
 [Install]
 WantedBy=multi-user.target
